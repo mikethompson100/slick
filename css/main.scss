@@ -1,2 +1,21 @@
+body { text-align: center}
+header { margin: 40px 0;}
 
-img { max-width: 100px; }
+.examplesContainer { padding: 20px 0;
+        &:nth-child(odd) {background: #e0e0e0;}
+        .carouselContainer { display: flex; justify-content: center;
+            .slick-prev:before, .slick-next:before { color: blue; }
+            .slick-slide img{ max-width: 100%; height: auto; object-fit: contain;}
+            .slick-slide { width: 200px; }
+            .carousel1 {max-width: 519px; 
+                @media (max-width: 767px) {
+                    max-width:80%;
+                }    
+            }
+        }
+        code { font-size: 1.2rem;
+                display: flex; 
+                text-align: left;
+                justify-content: center;
+        }
+}

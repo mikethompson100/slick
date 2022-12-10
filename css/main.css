@@ -1,0 +1,61 @@
+body {
+  text-align: center;
+}
+
+header {
+  margin: 40px 0;
+}
+
+.examplesContainer {
+  padding: 20px 0;
+}
+
+.examplesContainer:nth-child(odd) {
+  background: #e0e0e0;
+}
+
+.examplesContainer .carouselContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.examplesContainer .carouselContainer .slick-prev:before, .examplesContainer .carouselContainer .slick-next:before {
+  color: blue;
+}
+
+.examplesContainer .carouselContainer .slick-slide img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.examplesContainer .carouselContainer .slick-slide {
+  width: 200px;
+}
+
+.examplesContainer .carouselContainer .carousel1 {
+  max-width: 519px;
+}
+
+@media (max-width: 767px) {
+  .examplesContainer .carouselContainer .carousel1 {
+    max-width: 80%;
+  }
+}
+
+.examplesContainer code {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

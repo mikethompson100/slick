@@ -2,20 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Slick JS Example</title>
+    <title>Slick JS Carousel Examples</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="vendor/css/slick.scss"/>
-    <link rel="stylesheet" type="text/css" href="vendor/css/slick-theme.scss"/>
-    <link rel="stylesheet" type="text/css" href="css/main.scss"/>
+    <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css"/>    
+    <link rel="stylesheet" type="text/css" href="vendor/css/flex/flexboxgrid.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
   </head>
   <body>
-    <div class="carousel">
+      <header>
+        <h1>Slick js carousel examples</h1>
+      </header>
+      <main>
+        <div class="examplesContainer">
+              <h2>Example 1</h2>
+              <h3>3 slides</h3>
+              <div class="carouselContainer">
+                  <div class="carousel1">
+                      <div><img src="img/1.jpg" alt="" /></div>
+                      <div><img src="img/2.jpg" alt="" /></div>
+                      <div><img src="img/3.jpg" alt="" /></div>
+                  </div>
+              </div>
+              <pre>
+                <code class="language-html">
+Javascript:
 
-    </div>
+$('.carousel1').slick({
+slidesToShow: 1,
+arrows: true
+});
+                </code>
+              </pre>
+         </div>    
+      </main>
+      <footer>
+        
+      </footer>
     <script type="text/javascript" src="vendor/js/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="vendor/js/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/js/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
   </html>
