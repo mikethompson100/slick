@@ -18,25 +18,78 @@
       <main>
         <div class="examplesContainer">
               <h2>Example 1</h2>
-              <h3>3 slides</h3>
+              <h3>6 slides</h3>
               <div class="carouselContainer">
                   <div class="carousel1">
-                      <div><img src="img/1.jpg" alt="" /></div>
-                      <div><img src="img/2.jpg" alt="" /></div>
-                      <div><img src="img/3.jpg" alt="" /></div>
+                      <div><img src="img/01.jpg" alt="" /></div>
+                      <div><img src="img/02.jpg" alt="" /></div>
+                      <div><img src="img/03.jpg" alt="" /></div>
+                      <div><img src="img/04.jpg" alt="" /></div>
+                      <div><img src="img/05.jpg" alt="" /></div>
+                      <div><img src="img/06.jpg" alt="" /></div>
                   </div>
               </div>
               <pre>
-                <code class="language-html">
-Javascript:
+                <code>
 
 $('.carousel1').slick({
-slidesToShow: 1,
-arrows: true
+slidesToShow: 1,       (default)
+slidesToScroll: 1,     (default)
+arrows: true,          (default)
+infinite: true         (default)
 });
+
                 </code>
               </pre>
          </div>    
+         <div class="examplesContainer">
+          <h2>Example 2</h2>
+          <h3>6 slides</h3>
+          <div class="carouselContainer">
+              <div class="carousel2" data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "infinite": false}'>
+                  <div><img src="img/01.jpg" alt="" /></div>
+                  <div><img src="img/02.jpg" alt="" /></div>
+                  <div><img src="img/03.jpg" alt="" /></div>
+                  <div><img src="img/04.jpg" alt="" /></div>
+                  <div><img src="img/05.jpg" alt="" /></div>
+                  <div><img src="img/06.jpg" alt="" /></div>
+              </div>
+          </div>
+          <pre>
+            <code>
+
+$('.carousel2').slick({
+   slidesToShow: 2,
+   slidesToScroll: 2,
+  *infinite: false
+});
+
+            </code>
+          </pre>
+     </div>    
+         <div class="examplesContainer">
+            <h2>Example 3</h2>
+            <h3>6 slides</h3>
+            <div class="carouselContainer">
+                <div class="carousel3" data-slick='{"slidesToScroll": 2, "variableWidth": true}'>
+                    <div><img src="img/01.jpg" alt="" /></div>
+                    <div><img src="img/02.jpg" alt="" /></div>
+                    <div><img src="img/03.jpg" alt="" /></div>
+                    <div><img src="img/04.jpg" alt="" /></div>
+                    <div><img src="img/05.jpg" alt="" /></div>
+                    <div><img src="img/06.jpg" alt="" /></div>
+                </div>
+            </div>
+            <pre>
+              <code>
+
+      $('.carousel3').slick({      
+          slidesToScroll: 2,
+         *variableWidth: true
+      });
+              </code>
+            </pre>
+ </div>    
       </main>
       <footer>
         

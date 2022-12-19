@@ -1,4 +1,3 @@
-$('.carousel1').slick({
-    slidesToShow: 1,
-    arrows: true
-  });
+$('.carousel1').slick({});
+$('.carousel2').slick({});
+$('.carousel3').slick({});
