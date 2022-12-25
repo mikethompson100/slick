@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slick JS Carousel Examples</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css"/>    
-    <link rel="stylesheet" type="text/css" href="vendor/css/flex/flexboxgrid.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css">    
+    <link rel="stylesheet" type="text/css" href="vendor/css/flex/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
       <header>
@@ -39,7 +39,7 @@ infinite: true         (default)
           <h2>Example 2</h2>
           <h3>6 slides</h3>
           <div class="carouselContainer">
-              <div id="carousel2" class="carousel2" data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "infinite": false}'>
+              <div id="carousel2" class="carousel2" data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "dots": true, "infinite": false }'>
               </div>
           </div>
           <pre>
@@ -48,7 +48,8 @@ infinite: true         (default)
 $('.carousel2').slick({
    slidesToShow: 2,
    slidesToScroll: 2,
-  *infinite: false
+  *dots: true,
+  *infinite: false  
 });
 
             </code>
@@ -58,7 +59,7 @@ $('.carousel2').slick({
             <h2>Example 3</h2>
             <h3>6 slides</h3>
             <div class="carouselContainer">
-                <div id="carousel3" class="carousel3" data-slick='{"slidesToScroll": 2, "variableWidth": true}'></div>
+                <div id="carousel3" class="carousel3" data-slick='{"slidesToScroll": 2, "variableWidth": true }'></div>
             </div>
             <pre>
               <code>
@@ -74,8 +75,8 @@ $('.carousel2').slick({
       <footer>
         
       </footer>
-    <script type="text/javascript" src="vendor/js/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="vendor/js/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="vendor/js/jquery-3.6.1.min.js"></script>
+    <script src="vendor/js/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
   </html>

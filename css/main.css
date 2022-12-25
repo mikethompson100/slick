@@ -16,8 +16,24 @@ header {
   display: flex;
   justify-content: center;
 }
+.examplesContainer .carouselContainer .slick-dots button {
+  padding-top: 1px;
+}
+.examplesContainer .carouselContainer .slick-dots button:focus {
+  outline: 1px dashed blue;
+  outline-offset: -3px;
+  border-radius: 10px;
+}
+.examplesContainer .carouselContainer .slick-prev, .examplesContainer .carouselContainer .slick-next {
+  padding-top: 1px;
+}
 .examplesContainer .carouselContainer .slick-prev:before, .examplesContainer .carouselContainer .slick-next:before {
   color: blue;
+}
+.examplesContainer .carouselContainer .slick-prev:hover, .examplesContainer .carouselContainer .slick-prev:focus, .examplesContainer .carouselContainer .slick-next:hover, .examplesContainer .carouselContainer .slick-next:focus {
+  outline: 1px dashed blue;
+  outline-offset: 2px;
+  border-radius: 10px;
 }
 .examplesContainer .carouselContainer .slick-slide img {
   max-width: 100%;

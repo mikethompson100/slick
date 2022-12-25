@@ -4,7 +4,15 @@ header { margin: 40px 0;}
 .examplesContainer { padding: 20px 0;
         &:nth-child(odd) {background: #e0e0e0;}
         .carouselContainer { display: flex; justify-content: center;
+            .slick-dots { 
+                button {
+                    padding-top: 1px;
+                    &:focus { outline: 1px dashed blue; outline-offset: -3px; border-radius: 10px;}
+                }
+             }
+            .slick-prev, .slick-next { padding-top: 1px; }
             .slick-prev:before, .slick-next:before { color: blue; }
+            .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: 1px dashed blue; outline-offset: 2px; border-radius: 10px; }
             .slick-slide img{ max-width: 100%; height: auto; object-fit: contain;}
             .slick-slide { width: 200px; }
             .carousel1, .carousel2, .carousel3 {max-width: 519px; 
