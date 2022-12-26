@@ -20,7 +20,7 @@
               <h2>Example 1</h2>
               <h3>6 slides</h3>
               <div class="carouselContainer">
-                  <div id="carousel1" class="carousel1"></div>
+                  <div id="carousel1" class="carousel"></div>
               </div>
               <pre>
                 <code>
@@ -39,7 +39,7 @@ infinite: true         (default)
           <h2>Example 2</h2>
           <h3>6 slides</h3>
           <div class="carouselContainer">
-              <div id="carousel2" class="carousel2" data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "dots": true, "infinite": false }'>
+              <div id="carousel2" class="carousel" data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "dots": true, "infinite": false }'>
               </div>
           </div>
           <pre>
@@ -59,18 +59,35 @@ $('.carousel2').slick({
             <h2>Example 3</h2>
             <h3>6 slides</h3>
             <div class="carouselContainer">
-                <div id="carousel3" class="carousel3" data-slick='{"slidesToScroll": 2, "variableWidth": true }'></div>
+                <div id="carousel3" class="carousel" data-slick='{"slidesToScroll": 1, "variableWidth": true }'></div>
             </div>
             <pre>
               <code>
 
       $('.carousel3').slick({      
-          slidesToScroll: 2,
+          slidesToScroll: 1,
          *variableWidth: true
       });
               </code>
             </pre>
  </div>    
+ <div class="examplesContainer">
+  <h2>Example 4</h2>
+  <h3>6 slides</h3>
+  <div class="carouselContainer">
+      <div id="carousel4" class="carousel" data-slick='{"adaptiveHeight": true, "dots": true }'></div>
+  </div>
+  <pre>
+    <code>
+
+      $('.carousel4').slick({      
+        adaptiveHeight: true,
+        dots: true
+      });
+
+    </code>
+  </pre>
+</div>    
       </main>
       <footer>
         

@@ -44,11 +44,11 @@ header {
 .examplesContainer .carouselContainer .slick-slide {
   width: 200px;
 }
-.examplesContainer .carouselContainer .carousel1, .examplesContainer .carouselContainer .carousel2, .examplesContainer .carouselContainer .carousel3 {
+.examplesContainer .carouselContainer .carousel {
   max-width: 519px;
 }
 @media (max-width: 767px) {
-  .examplesContainer .carouselContainer .carousel1, .examplesContainer .carouselContainer .carousel2, .examplesContainer .carouselContainer .carousel3 {
+  .examplesContainer .carouselContainer .carousel {
     max-width: 80%;
   }
 }

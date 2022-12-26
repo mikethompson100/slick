@@ -15,7 +15,7 @@ header { margin: 40px 0;}
             .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: 1px dashed blue; outline-offset: 2px; border-radius: 10px; }
             .slick-slide img{ max-width: 100%; height: auto; object-fit: contain;}
             .slick-slide { width: 200px; }
-            .carousel1, .carousel2, .carousel3 {max-width: 519px; 
+            .carousel {max-width: 519px; 
                 @media (max-width: 767px) {
                     max-width:80%;
                 }    
