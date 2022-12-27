@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Slick JS Carousel Examples</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css">    
-    <link rel="stylesheet" type="text/css" href="vendor/css/flex/flexboxgrid.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body>
-      <header>
-        <h1>Slick js carousel examples</h1>
-      </header>
-      <main>
-        <div class="examplesContainer">
-              <h2>Example 1</h2>
-              <h3>6 slides</h3>
-              <div class="carouselContainer">
-                  <div id="carousel1" class="carousel"></div>
-              </div>
-              <pre>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slick JS Carousel Examples</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="vendor/css/flex/flexboxgrid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <header id="top">
+    <h1>Slick js carousel examples</h1>
+    <h3><a href="#defaults">View default values</a> | <a href="https://github.com/mikethompson100/slick" target="_blank">Github</a></h3>
+  </header>
+  <main>
+    <div class="examplesContainer">
+      <h2>Example 1</h2>
+      <h3>6 slides</h3>
+      <div class="carouselContainer">
+        <div id="carousel1" class="carousel"></div>
+      </div>
+      <pre>
                 <code>
 
 $('.carousel1').slick({
@@ -34,15 +37,16 @@ infinite: true         (default)
 
                 </code>
               </pre>
-         </div>    
-         <div class="examplesContainer">
-          <h2>Example 2</h2>
-          <h3>6 slides</h3>
-          <div class="carouselContainer">
-              <div id="carousel2" class="carousel" data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "dots": true, "infinite": false }'>
-              </div>
-          </div>
-          <pre>
+    </div>
+    <div class="examplesContainer">
+      <h2>Example 2</h2>
+      <h3>6 slides</h3>
+      <div class="carouselContainer">
+        <div id="carousel2" class="carousel"
+          data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "dots": true, "infinite": false }'>
+        </div>
+      </div>
+      <pre>
             <code>
 
 $('.carousel2').slick({
@@ -54,14 +58,14 @@ $('.carousel2').slick({
 
             </code>
           </pre>
-     </div>    
-         <div class="examplesContainer">
-            <h2>Example 3</h2>
-            <h3>6 slides</h3>
-            <div class="carouselContainer">
-                <div id="carousel3" class="carousel" data-slick='{"slidesToScroll": 1, "variableWidth": true }'></div>
-            </div>
-            <pre>
+    </div>
+    <div class="examplesContainer">
+      <h2>Example 3</h2>
+      <h3>6 slides</h3>
+      <div class="carouselContainer">
+        <div id="carousel3" class="carousel" data-slick='{"slidesToScroll": 1, "variableWidth": true }'></div>
+      </div>
+      <pre>
               <code>
 
       $('.carousel3').slick({      
@@ -70,30 +74,277 @@ $('.carousel2').slick({
       });
               </code>
             </pre>
- </div>    
- <div class="examplesContainer">
-  <h2>Example 4</h2>
-  <h3>6 slides</h3>
-  <div class="carouselContainer">
-      <div id="carousel4" class="carousel" data-slick='{"adaptiveHeight": true, "dots": true }'></div>
-  </div>
-  <pre>
-    <code>
+    </div>
+    <div class="examplesContainer">
+      <h2>Example 4</h2>
+      <h3>6 slides</h3>
+      <div class="carouselContainer">
+        <div id="carousel4" class="carousel" data-slick='{"adaptiveHeight": true, "dots": true }'></div>
+      </div>
+      <pre>
+          <code>
 
-      $('.carousel4').slick({      
-        adaptiveHeight: true,
-        dots: true
-      });
+            $('.carousel4').slick({      
+              adaptiveHeight: true,
+              dots: true
+            });
 
-    </code>
-  </pre>
-</div>    
-      </main>
-      <footer>
-        
-      </footer>
-    <script src="vendor/js/jquery-3.6.1.min.js"></script>
-    <script src="vendor/js/slick/slick.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+          </code>
+        </pre>
+    </div>
+  </main>
+  <footer id="defaults">
+    <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>
+
+    <table>
+      <th>Setting</th>
+      <th>Datatype</th>
+      <th>Default values</th>
+      <tbody>
+        <tr>
+          <td>accessibility</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>adaptiveHeight</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>autoplay</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>autoplaySpeed</td>
+          <td>int(ms)</td>
+          <td>3000</td>
+        </tr>
+        <tr>
+          <td>arrows</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>asNavFor</td>
+          <td>string</td>
+          <td>null</td>
+        </tr>
+        <tr>
+          <td>appendArrows</td>
+          <td>string</td>
+          <td>$(element)</td>
+        </tr>
+        <tr>
+          <td>appendDots</td>
+          <td>string</td>
+          <td>$(element)</td>
+        </tr>
+        <tr>
+          <td>prevArrow</td>
+          <td>string</td>
+          <td>html|jQuery selector) | object (DOM node|jQuery object)
+            <br /><code>&lt;button type="button" class="slick-prev"&gt; Previous &lt;/button&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td>nextArrow</td>
+          <td>string</td>
+          <td>(html|jQuery selector) | object (DOM node|jQuery object)
+            <br /><code>&lt;button type="button" class="slick-next"&gt; Next &lt;/button&gt;</code>
+        </tr>
+        <tr>
+          <td>centerMode</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>centerPadding</td>
+          <td>string</td>
+          <td>'50px'</td>
+        </tr>
+        <tr>
+          <td>cssEase</td>
+          <td>string</td>
+          <td>'ease'</td>
+        </tr>
+        <tr>
+          <td>customPaging</td>
+          <td>function</td>
+          <td>n/a</td>
+        </tr>
+        <tr>
+          <td>dots</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>dotsClass</td>
+          <td>string</td>
+          <td>'slick-dots'</td>
+        </tr>
+        <tr>
+          <td>draggable</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>fade</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>focusOnSelect</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>easing</td>
+          <td>string</td>
+          <td>'linear'</td>
+        </tr>
+        <tr>
+          <td>edgeFriction</td>
+          <td>integer</td>
+          <td>0.15</td>
+        </tr>
+        <tr>
+          <td>infinite</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>initialSlide</td>
+          <td>integer</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>lazyLoad</td>
+          <td>string</td>
+          <td>'ondemand'</td>
+        </tr>
+        <tr>
+          <td>mobileFirst</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>pauseOnFocus</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>pauseOnHover</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>respondTo</td>
+          <td>string</td>
+          <td>'window'</td>
+        </tr>
+        <tr>
+          <td>responsive</td>
+          <td>object</td>
+          <td>none</td>
+        </tr>
+        <tr>
+          <td>rows</td>
+          <td>integer</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>slide</td>
+          <td>element</td>
+          <td>''</td>
+        </tr>
+        <tr>
+          <td>slidesPerRow</td>
+          <td>integer</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>slidesToShow</td>
+          <td>integer</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>slidesToScroll</td>
+          <td>integer</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>speed</td>
+          <td>int(ms)</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>swipe</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>swipeToSlide</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>touchMove</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>touchThreshold</td>
+          <td>integer</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>useCSS</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>useTransform</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>variableWidth</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>vertical</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>verticalSwiping</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>rtl</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>waitForAnimate</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>zIndex</td>
+          <td>number</td>
+          <td>1000</td>
+        </tr>
+      </tbody>
+    </table>
+  </footer>
+  <script src="vendor/js/jquery-3.6.1.min.js"></script>
+  <script src="vendor/js/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
