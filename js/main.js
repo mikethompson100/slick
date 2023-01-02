@@ -1,4 +1,4 @@
-const carouselTotal = 4;
+const carouselTotal = 7;
 const imagesTotal = 6;
 
 function setupImages(carouselTotal) { // add same group of image nodes to each carousel
@@ -10,7 +10,6 @@ function setupImages(carouselTotal) { // add same group of image nodes to each c
           var node = new Image();
           if (j === 2 && i === 4) { 
             node.src = 'img/0' + j + 'tall' + '.jpg'; 
-            console.log("j: " + j + "i: " + i);
           }
           else node.src = 'img/0' + j + '.jpg';
           switch (j) {
@@ -27,15 +26,49 @@ function setupImages(carouselTotal) { // add same group of image nodes to each c
   }
 }
 
-function initCarousels(numOfCarousels) { // run all slick carousels
-  for (let i = 1;  i <= numOfCarousels; i++) {
-        node = '#carousel' + i;
-          $(node).slick({});
-  }
-}
+function initCarousels() { // run all slick carousels
+  
+$('#carousel1').slick({});
+
+$('#carousel2').slick({
+  slidesToShow: 2, 
+  slidesToScroll: 2, 
+  dots: true, 
+  infinite: false
+});
+
+$('#carousel3').slick({
+  slidesToScroll: 1, 
+  variableWidth: true 
+}); 
+
+$('#carousel4').slick({
+  adaptiveHeight: true, 
+  dots: true 
+}); 
+
+$('#carousel5').slick({
+  autoplay: true, 
+  autoplaySpeed: 1000
+}); 
+
+$('#carousel6').slick({
+  asNavFor: "#carousel7",
+  dots: true,
+  arrows: false
+}); 
+$("#carousel7").slick({
+  slidesToShow: 3,
+  speed: 1000,    
+  asNavFor: "#carousel6"
+});
+
+
+
+}; 
 
 // galleryInit is an asynchronous function that returns a promise of the images being loaded.
 async function galleryInit() { return setupImages(carouselTotal) }
 
 // The galleryInit call waits for the images to be loaded before running slick.
-galleryInit().then(initCarousels(carouselTotal)); 
+galleryInit().then(initCarousels()); 

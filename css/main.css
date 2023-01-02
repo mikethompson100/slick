@@ -17,7 +17,8 @@ header h3 a {
 }
 .examplesContainer .carouselContainer {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .examplesContainer .carouselContainer .slick-dots button {
   padding-top: 1px;

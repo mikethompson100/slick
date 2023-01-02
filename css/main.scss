@@ -5,9 +5,9 @@ header { margin: 40px 0;
     }
 }
 
-.examplesContainer { padding: 20px 0;
+.examplesContainer { padding: 20px 0;         
         &:nth-child(odd) {background: #e0e0e0;}
-        .carouselContainer { display: flex; justify-content: center;
+        .carouselContainer { display: flex; align-items: center; flex-direction: column;                               
             .slick-dots { 
                 button {
                     padding-top: 1px;
