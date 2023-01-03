@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Slick JS Carousel Examples</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="vendor/css/slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="vendor/css/flex/flexboxgrid.min.css">
@@ -20,132 +21,116 @@
   </header>
   <main>
     <div class="examplesContainer">
-      <h2>Example 1</h2>
+      <h2>Example 1 - Basic Carousel</h2>
       <h3>6 slides</h3>
       <div class="carouselContainer">
         <div id="carousel1" class="carousel"></div>
       </div>
-      <pre>
-                <code>
+<pre><code>
+    $('.carousel1').slick({});
 
-$('.carousel1').slick({
-
-slidesToShow: 1,       (default)
-slidesToScroll: 1,     (default)
-arrows: true,          (default)
-infinite: true         (default)
-
-});
-
-                </code>
-              </pre>
+    Using all defaults.
+</code></pre>
     </div>
     <div class="examplesContainer">
-      <h2>Example 2</h2>
+      <h2>Example 2 - infinite and dots</h2>
       <h3>6 slides</h3>
       <div class="carouselContainer">
         <div id="carousel2" class="carousel"></div>
       </div>
-      <pre>
-            <code>
-
-$('.carousel2').slick({
-
-  *dots: true,
-  *infinite: false 
-   slidesToShow: 2,
-   slidesToScroll: 2,
- 
+<pre><code>
+$('#carousel2').slick({
+    slidesToShow: 2, 
+    slidesToScroll: 2, 
+    <b>dots: true,</b>
+    <b>infinite: false</b>
 });
-
-            </code>
-      </pre>
+</code></pre>
     </div>
     <div class="examplesContainer">
-      <h2>Example 3</h2>
+      <h2>Example 3 - variablewidth</h2>
       <h3>6 slides</h3>
       <div class="carouselContainer">
         <div id="carousel3" class="carousel"></div>
       </div>
-      <pre>
-              <code>
-
-      $('.carousel3').slick({   
-        
-         *variableWidth: true,   
-          slidesToScroll: 1
-
-      });
-              </code>
-      </pre>
+<pre><code>
+    $('#carousel3').slick({
+    slidesToScroll: 1,
+    <b>variableWidth: true</b>
+    }); 
+</code></pre>
     </div>
     <div class="examplesContainer">
-      <h2>Example 4</h2>
+      <h2>Example 4 - adaptiveheight (slide #2) with fade</h2>
       <h3>6 slides</h3>
       <div class="carouselContainer">
         <div id="carousel4" class="carousel"></div>
       </div>
-      <pre>
-          <code>
-
-        (demonstrated on slide #2)
-
-        $('.carousel4').slick({      
-
-          *adaptiveHeight: true,  
-          dots: true
-
-        });
-
-          </code>
-        </pre>
+      <pre><code>
+$('#carousel4').slick({
+    <b>adaptiveHeight: true,</b>
+    dots: true,
+    <b>fade:true,</b>
+    speed: 4000
+    }); 
+</code></pre>
     </div>
     <div class="examplesContainer">
-      <h2>Example 5</h2>
+      <h2>Example 5 - autoplay/autoplaySpeed</h2>
       <h3>6 slides</h3>
       <div class="carouselContainer">
         <div id="carousel5" class="carousel"></div>
       </div>
-      <pre>
-          <code>
-
-            $('.carousel5').slick({      
-              autoplay: true,
-              autoplaySpeed: 1000
-            });
-
-          </code>
-        </pre>
+<pre><code>
+$('#carousel5').slick({
+    <b>autoplay: true,</b>
+    <b>autoplaySpeed: 1000</b>
+});</code></pre>
     </div>
-    
     <div class="examplesContainer">
-      <h2>Example 6 (Carousels 6 & 7)</h2>
+      <h2>Example 6 - asNavFor (Carousels 6 & 7)</h2>
       <h3>6 slides</h3>
       <h5>Carousel 6</h5>
-    <div class="carouselContainer">
-      <div id="carousel6" class="carousel"></div>
-      <div id="carousel7" class="carousel"></div>
-      <h5>Carousel 7</h5>
-    </div>
-    <pre>
-        <code>
- 
-      $('#carousel6').slick({
-        asNavFor: "#carousel7",
-        dots: true,
-        arrows: false
-      }); 
+        <div class="carouselContainer">
+          <div id="carousel6" class="carousel"></div>
+          <div id="carousel7" class="carousel"></div>
+          <h5>Carousel 7</h5>
+        </div>
+<pre><code>    
+$('#carousel6').slick({
+  <b>asNavFor: "#carousel7",</b>
+  dots: true,
+  arrows: false
+}); 
+$("#carousel7").slick({
+  slidesToShow: 3,
+  <b>asNavFor: "#carousel6"</b>
+});</code></pre>
+    </div> 
+    <div class="examplesContainer">
+      <h2>Example 8 - asNavFor (Carousels 8 & 9 with centerMode/focusOnSelect)</h2>
+      <h3>6 slides</h3>
+      <h5>Carousel 8</h5>
+        <div class="carouselContainer">
+          <div id="carousel8" class="carousel"></div>
+          <div id="carousel9" class="carousel"></div>
+          <h5>Carousel 9</h5>
+        </div>
+<pre><code>
+$('#carousel8').slick({
+    <b>asNavFor: "#carousel9",</b>
+    arrows: false,
+    fade: true
+}); 
 
-            $("#carousel7").slick({
-              slidesToShow: 3,
-              speed: 1000,    
-              asNavFor: "#carousel6"
-            });
-
-        </code>
-      </pre>
+$("#carousel9").slick({
+    <b>asNavFor: "#carousel8",</b>
+    <b>focusOnSelect: true,</b> (click on slide)
+    <b>centerMode: true,</b>
+    slidesToShow: 3   (needs to be an odd # to center)
+});
+</code></pre>
     </div>
-  </div>
   </main>
   <footer id="defaults">
     <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>

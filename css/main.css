@@ -9,58 +9,70 @@ header h3 a {
   color: #000;
 }
 
-.examplesContainer {
-  padding: 20px 0;
+main .examplesContainer {
+  padding: 25px 0 45px 0;
 }
-.examplesContainer:nth-child(odd) {
-  background: #e0e0e0;
+main .examplesContainer:nth-child(odd) {
+  background: rgb(151, 180, 211);
 }
-.examplesContainer .carouselContainer {
+main .examplesContainer:nth-child(even) {
+  background: #fff;
+}
+main .examplesContainer .carouselContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.examplesContainer .carouselContainer .slick-dots button {
+main .examplesContainer .carouselContainer .slick-dots button {
   padding-top: 1px;
 }
-.examplesContainer .carouselContainer .slick-dots button:focus {
+main .examplesContainer .carouselContainer .slick-dots button:focus {
   outline: 1px dashed blue;
   outline-offset: -3px;
   border-radius: 10px;
 }
-.examplesContainer .carouselContainer .slick-prev, .examplesContainer .carouselContainer .slick-next {
+main .examplesContainer .carouselContainer .slick-prev, main .examplesContainer .carouselContainer .slick-next {
   padding-top: 1px;
 }
-.examplesContainer .carouselContainer .slick-prev:before, .examplesContainer .carouselContainer .slick-next:before {
+main .examplesContainer .carouselContainer .slick-prev:before, main .examplesContainer .carouselContainer .slick-next:before {
   color: blue;
 }
-.examplesContainer .carouselContainer .slick-prev:hover, .examplesContainer .carouselContainer .slick-prev:focus, .examplesContainer .carouselContainer .slick-next:hover, .examplesContainer .carouselContainer .slick-next:focus {
+main .examplesContainer .carouselContainer .slick-prev:hover, main .examplesContainer .carouselContainer .slick-prev:focus, main .examplesContainer .carouselContainer .slick-next:hover, main .examplesContainer .carouselContainer .slick-next:focus {
   outline: 1px dashed blue;
   outline-offset: 2px;
   border-radius: 10px;
 }
-.examplesContainer .carouselContainer .slick-slide img {
+main .examplesContainer .carouselContainer .slick-slide img {
   max-width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.examplesContainer .carouselContainer .slick-slide {
+main .examplesContainer .carouselContainer .slick-slide {
   width: 200px;
 }
-.examplesContainer .carouselContainer .carousel {
+main .examplesContainer .carouselContainer .carousel {
   max-width: 519px;
 }
 @media (max-width: 767px) {
-  .examplesContainer .carouselContainer .carousel {
+  main .examplesContainer .carouselContainer .carousel {
     max-width: 80%;
   }
 }
-.examplesContainer code {
-  font-size: 1.1rem;
+main .examplesContainer pre {
+  margin: 0;
   display: flex;
-  text-align: left;
   justify-content: center;
+  font-size: 1.2em;
+}
+main .examplesContainer pre code {
+  text-align: left;
+}
+main .examplesContainer pre code b {
+  color: blue;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-align: left;
 }
 
 footer h2 a {
