@@ -1,4 +1,4 @@
-const carouselTotal = 9;
+const carouselTotal = 10;
 const imagesTotal = 6;
 
 function setupImages(carouselTotal) { // add same group of image nodes to each carousel
@@ -74,6 +74,23 @@ $("#carousel9").slick({
   asNavFor: "#carousel8",
   centerMode: true,
   focusOnSelect: true
+});
+
+
+$("#carousel10").slick({
+  slidesToShow: 3,
+  arrows: true,
+  appendArrows: '.appendArrowsDesktop',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        arrows: true,
+        appendArrows: '.appendArrowsMobile'
+      }
+    }
+  ]
 });
 
 

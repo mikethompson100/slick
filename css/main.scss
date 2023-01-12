@@ -6,8 +6,7 @@ header { margin: 40px 0;
 }
 
 main {
-    .examplesContainer { 
-        padding: 25px 0 45px 0;  
+    .examplesContainer { padding: 25px 0 45px 0;  
             &:nth-child(odd) { background: rgba(151,180,211,1); }
             &:nth-child(even) { background: #fff; }
             .carouselContainer { display: flex; align-items: center; flex-direction: column;                               
@@ -32,14 +31,38 @@ main {
                 margin: 0;
                 display: flex;
                 justify-content: center;
-                font-size: 1.2em;
+                font-size: .9em;
+                @media (min-width: 768px) { font-size: 1.2em; }
                 code {                
                     text-align: left; 
                     b { 
                         color: blue; font-weight: 700; line-height: 1.3em; text-align: left;
                     }
                 }
+            }            
+            @media (min-width: 768px) { .mobileVersion { display: none; } }
+            @media (max-width: 767px) { .desktopVersion { display: none; } }
+            .appendArrowsMobileContainer { border: 1px dotted red; margin: 0 auto; max-width: 80%; background-color: #ddd; padding: 10px 0 0 0;            
+                @media (min-width: 767px) { background-color: #fff; display: none; }
+                .appendArrowsMobile { justify-content: center;
+                    position: relative;
+                    height: 40px;
+                    width: 0;
+                    margin: 0 auto;
+                    button { background-color: red; border-radius: 10px; padding-top: 1px; }
+                }   
+            }             
+            .appendArrowsDesktopContainer { border: 1px dotted red; margin: 0 auto; max-width: 519px; background-color: #ddd; padding: 10px 0 0 0;
+                 @media (max-width: 767px) { background-color: #fff; display: none; }
+                .appendArrowsDesktop { justify-content: center;
+                    position: relative;
+                    height: 40px;
+                    width: 0;
+                    margin: 0 auto;
+                    button { background-color: red; border-radius: 10px; padding-top: 1px; }
+                }
             }
+
     }
 }
 footer {

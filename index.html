@@ -117,18 +117,56 @@ $("#carousel7").slick({
           <h5>Carousel 9</h5>
         </div>
 <pre><code>
-$('#carousel8').slick({
-    <b>asNavFor: "#carousel9",</b>
-    arrows: false,
-    fade: true
-}); 
+    $('#carousel8').slick({
+        <b>asNavFor: "#carousel9",</b>
+        arrows: false,
+        fade: true
+    }); 
 
-$("#carousel9").slick({
-    <b>asNavFor: "#carousel8",</b>
-    <b>focusOnSelect: true,</b> (click on slide)
-    <b>centerMode: true,</b>
-    slidesToShow: 3   (needs to be an odd # to center)
-});
+    $("#carousel9").slick({
+        <b>asNavFor: "#carousel8",</b>
+        <b>focusOnSelect: true,</b> (click on slide)
+        <b>centerMode: true,</b>
+        slidesToShow: 3             
+    });
+
+ (slidesToShow needs to be an odd # to center)
+
+</code></pre>
+    </div>
+    <div class="examplesContainer">
+      <h2>Example 10 - appendArrows/responsive</h2>   
+      <h3>6 slides</h3>
+      <h4>Using appendArrows to target specified divs for arrows rendering.<br/>Also designate separate locations for both mobile and desktop</h4> 
+      <div class="appendArrowsMobileContainer">
+        <span class="mobileVersion">Mobile arrows location:</span>
+        <div class="appendArrowsMobile"></div>
+      </div>
+      <div class="carouselContainer">   
+        <div id="carousel10" class="carousel"></div>
+      </div>           
+      <div class="appendArrowsDesktopContainer"> 
+          <span class="desktopVersion">Desktop arrows location:</span>
+          <div class="appendArrowsDesktop"></div>
+      </div>
+<pre><code>
+
+  $("#carousel10").slick({
+    slidesToShow: 3,
+    <b>arrows: true,</b>
+    <b>appendArrows: '.appendArrowsDesktop',</b>
+    <b>responsive: [
+      {
+        breakpoint: 768,
+        settings: {</b>
+          slidesToShow: 3,
+          <b>arrows: true,
+          appendArrows: '.appendArrowsMobile'
+        }
+      }
+    ]</b>
+  });
+  
 </code></pre>
     </div>
   </main>

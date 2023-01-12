@@ -9,3 +9,5 @@ Notes: 1/2/23: Replaced the javascript that looped through each carousel to acti
 Still in the process of converting over all carousels, at Carousel 6/7.
 
 Notes: 1/3/23: Created new carousels (8/9) to demonstrate how to use centerMode and focusOnSelect with asNavFor. Updated styles to make applicable features stand out. 
+
+Notes: 1/11/23: Finished setting up carousel 10 demonstrating the use of appendArrows and responsive. Created two separate arrow sections, one for mobile and one for desktop. Added some styling.

@@ -63,7 +63,12 @@ main .examplesContainer pre {
   margin: 0;
   display: flex;
   justify-content: center;
-  font-size: 1.2em;
+  font-size: 0.9em;
+}
+@media (min-width: 768px) {
+  main .examplesContainer pre {
+    font-size: 1.2em;
+  }
 }
 main .examplesContainer pre code {
   text-align: left;
@@ -73,6 +78,66 @@ main .examplesContainer pre code b {
   font-weight: 700;
   line-height: 1.3em;
   text-align: left;
+}
+@media (min-width: 768px) {
+  main .examplesContainer .mobileVersion {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  main .examplesContainer .desktopVersion {
+    display: none;
+  }
+}
+main .examplesContainer .appendArrowsMobileContainer {
+  border: 1px dotted red;
+  margin: 0 auto;
+  max-width: 80%;
+  background-color: #ddd;
+  padding: 10px 0 0 0;
+}
+@media (min-width: 767px) {
+  main .examplesContainer .appendArrowsMobileContainer {
+    background-color: #fff;
+    display: none;
+  }
+}
+main .examplesContainer .appendArrowsMobileContainer .appendArrowsMobile {
+  justify-content: center;
+  position: relative;
+  height: 40px;
+  width: 0;
+  margin: 0 auto;
+}
+main .examplesContainer .appendArrowsMobileContainer .appendArrowsMobile button {
+  background-color: red;
+  border-radius: 10px;
+  padding-top: 1px;
+}
+main .examplesContainer .appendArrowsDesktopContainer {
+  border: 1px dotted red;
+  margin: 0 auto;
+  max-width: 519px;
+  background-color: #ddd;
+  padding: 10px 0 0 0;
+}
+@media (max-width: 767px) {
+  main .examplesContainer .appendArrowsDesktopContainer {
+    background-color: #fff;
+    display: none;
+  }
+}
+main .examplesContainer .appendArrowsDesktopContainer .appendArrowsDesktop {
+  justify-content: center;
+  position: relative;
+  height: 40px;
+  width: 0;
+  margin: 0 auto;
+}
+main .examplesContainer .appendArrowsDesktopContainer .appendArrowsDesktop button {
+  background-color: red;
+  border-radius: 10px;
+  padding-top: 1px;
 }
 
 footer h2 a {
