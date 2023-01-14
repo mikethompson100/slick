@@ -137,7 +137,7 @@ $("#carousel7").slick({
     <div class="examplesContainer">
       <h2>Example 10 - appendArrows/responsive</h2>   
       <h3>6 slides</h3>
-      <h4>Using appendArrows to target specified divs for arrows rendering.<br/>Also designate separate locations for both mobile and desktop</h4> 
+      <h4>Using appendArrows to target specified divs for arrow section rendering.<br/>Also designate separate locations for both mobile and desktop</h4> 
       <div class="appendArrowsMobileContainer">
         <span class="mobileVersion">Mobile arrows location:</span>
         <div class="appendArrowsMobile"></div>
@@ -166,6 +166,40 @@ $("#carousel7").slick({
       }
     ]</b>
   });
+  
+</code></pre>
+    </div>
+
+    <div class="examplesContainer">      
+      <h2>Example 11 - prevArrow/nextArrow and appendDots</h2>  
+      <div class="appendDotsContainer"><div class="appendDots"></div></div>
+      <h3>6 slides</h3>
+      <h4>Using prevArrow/nextArrow to target specified divs for unique arrow image or text rendering. Also uses appendDots.</h4> 
+      <div id="c11" class="carouselContainer"> 
+        <div class="buttonsContainer">
+          <button class="previous arrow1">Prev</button>
+          <button class="previous arrow2"><<</button>
+          <div class="arrow3Container"><button class="previous arrow3"></button></div>
+          <div class="previous arrow4"><img src="img/box-arrow-left.svg" /></div>
+        </div>
+            <div id="carousel11" class="carousel"></div>
+        <div class="buttonsContainer">
+          <button class="next arrow1">Next</button>
+          <button class="next arrow2">>></button>
+          <div class="arrow3Container"><button class="next arrow3"></button></div>
+          <div class="next arrow4"><img src="img/box-arrow-right.svg" /></div>
+        </div>
+      </div>           
+<pre><code>
+
+  $('#carousel11').slick({
+    slidesToShow: 3,
+    <b>dots: true,</b>
+    <b>appendDots: '.appendDots',</b>
+    <b class="purple">arrows: true,</b>
+    <b class="purple">prevArrow: '.previous',
+    nextArrow: '.next'</b>
+  }); 
   
 </code></pre>
     </div>
