@@ -23,34 +23,6 @@ main .examplesContainer .carouselContainer {
   align-items: center;
   flex-direction: column;
 }
-main .examplesContainer .carouselContainer .slick-dots button {
-  padding-top: 1px;
-}
-main .examplesContainer .carouselContainer .slick-dots button:focus {
-  outline: 1px dashed blue;
-  outline-offset: -3px;
-  border-radius: 10px;
-}
-main .examplesContainer .carouselContainer .slick-prev, main .examplesContainer .carouselContainer .slick-next {
-  padding-top: 1px;
-}
-main .examplesContainer .carouselContainer .slick-prev:before, main .examplesContainer .carouselContainer .slick-next:before {
-  color: blue;
-}
-main .examplesContainer .carouselContainer .slick-prev:hover, main .examplesContainer .carouselContainer .slick-prev:focus, main .examplesContainer .carouselContainer .slick-next:hover, main .examplesContainer .carouselContainer .slick-next:focus {
-  outline: 1px dashed blue;
-  outline-offset: 2px;
-  border-radius: 10px;
-}
-main .examplesContainer .carouselContainer .slick-slide img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-main .examplesContainer .carouselContainer .slick-slide {
-  width: 200px;
-}
 main .examplesContainer .carouselContainer .carousel {
   max-width: 519px;
 }
@@ -58,6 +30,34 @@ main .examplesContainer .carouselContainer .carousel {
   main .examplesContainer .carouselContainer .carousel {
     max-width: 80%;
   }
+}
+main .examplesContainer .carouselContainer .carousel .slick-dots button {
+  padding-top: 1px;
+}
+main .examplesContainer .carouselContainer .carousel .slick-dots button:focus {
+  outline: 1px dashed blue;
+  outline-offset: -3px;
+  border-radius: 10px;
+}
+main .examplesContainer .carouselContainer .carousel .slick-prev, main .examplesContainer .carouselContainer .carousel .slick-next {
+  padding-top: 1px;
+}
+main .examplesContainer .carouselContainer .carousel .slick-prev:before, main .examplesContainer .carouselContainer .carousel .slick-next:before {
+  color: blue;
+}
+main .examplesContainer .carouselContainer .carousel .slick-prev:hover, main .examplesContainer .carouselContainer .carousel .slick-prev:focus, main .examplesContainer .carouselContainer .carousel .slick-next:hover, main .examplesContainer .carouselContainer .carousel .slick-next:focus {
+  outline: 1px dashed blue;
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+main .examplesContainer .carouselContainer .carousel .slick-slide img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .examplesContainer .carouselContainer .carousel .slick-slide {
+  width: 200px;
 }
 main .examplesContainer pre {
   margin: 0;
@@ -82,22 +82,17 @@ main .examplesContainer pre code b {
 main .examplesContainer pre code b.purple {
   color: purple;
 }
-@media (min-width: 768px) {
-  main .examplesContainer .mobileVersion {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  main .examplesContainer .desktopVersion {
-    display: none;
-  }
-}
 main .examplesContainer .appendArrowsMobileContainer {
   border: 1px dotted red;
   margin: 0 auto;
   max-width: 80%;
   background-color: #ddd;
   padding: 10px 0 0 0;
+}
+@media (min-width: 768px) {
+  main .examplesContainer .appendArrowsMobileContainer .mobileVersion {
+    display: none;
+  }
 }
 @media (min-width: 767px) {
   main .examplesContainer .appendArrowsMobileContainer {
@@ -125,6 +120,11 @@ main .examplesContainer .appendArrowsDesktopContainer {
   padding: 10px 0 0 0;
 }
 @media (max-width: 767px) {
+  main .examplesContainer .appendArrowsDesktopContainer .desktopVersion {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
   main .examplesContainer .appendArrowsDesktopContainer {
     background-color: #fff;
     display: none;
@@ -142,28 +142,28 @@ main .examplesContainer .appendArrowsDesktopContainer .appendArrowsDesktop butto
   border-radius: 10px;
   padding-top: 1px;
 }
-main .examplesContainer .appendDotsContainer {
+main .examplesContainer#c11 .appendDotsContainer {
   display: flex;
   justify-content: center;
 }
-main .examplesContainer .appendDotsContainer .appendDots {
+main .examplesContainer#c11 .appendDotsContainer .appendDots {
   background-color: green;
   height: 40px;
 }
-main .examplesContainer .appendDotsContainer .appendDots .slick-dots {
+main .examplesContainer#c11 .appendDotsContainer .appendDots .slick-dots {
   background-color: #fff;
   position: static;
 }
-main .examplesContainer #c11 {
+main .examplesContainer#c11 .carouselContainer {
   flex-direction: row;
   justify-content: center;
 }
 @media (max-width: 991px) {
-  main .examplesContainer #c11 {
+  main .examplesContainer#c11 .carouselContainer {
     flex-direction: column;
   }
 }
-main .examplesContainer #c11 .previous, main .examplesContainer #c11 .next {
+main .examplesContainer#c11 .carouselContainer .previous, main .examplesContainer#c11 .carouselContainer .next {
   font-weight: bold;
   position: relative;
   font-size: 12px;
@@ -172,52 +172,52 @@ main .examplesContainer #c11 .previous, main .examplesContainer #c11 .next {
   width: 70px;
   min-height: 25px;
 }
-main .examplesContainer #c11 .previous:before, main .examplesContainer #c11 .previous:after, main .examplesContainer #c11 .next:before, main .examplesContainer #c11 .next:after {
+main .examplesContainer#c11 .carouselContainer .previous:before, main .examplesContainer#c11 .carouselContainer .previous:after, main .examplesContainer#c11 .carouselContainer .next:before, main .examplesContainer#c11 .carouselContainer .next:after {
   color: purple;
 }
-main .examplesContainer #c11 .slick-dotted.slick-slider {
+main .examplesContainer#c11 .carouselContainer .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
-main .examplesContainer #c11 .arrow1:after {
+main .examplesContainer#c11 .carouselContainer .arrow1:after {
   content: "(Text)";
   position: absolute;
   top: 3px;
 }
-main .examplesContainer #c11 .previous.arrow1:after {
+main .examplesContainer#c11 .carouselContainer .previous.arrow1:after {
   content: "(Text)";
   left: -45px;
 }
-main .examplesContainer #c11 .next.arrow1:after {
+main .examplesContainer#c11 .carouselContainer .next.arrow1:after {
   content: "(Text)";
   left: 84px;
 }
-main .examplesContainer #c11 .arrow2:after {
+main .examplesContainer#c11 .carouselContainer .arrow2:after {
   content: "(Text arrows)";
   position: absolute;
   top: 3px;
   white-space: nowrap;
 }
-main .examplesContainer #c11 .previous.arrow2:after {
+main .examplesContainer#c11 .carouselContainer .previous.arrow2:after {
   content: "(Text arrows)";
   left: -82px;
 }
-main .examplesContainer #c11 .next.arrow2:after {
+main .examplesContainer#c11 .carouselContainer .next.arrow2:after {
   content: "(Text arrows)";
   left: 84px;
 }
-main .examplesContainer #c11 .buttonsContainer {
+main .examplesContainer#c11 .carouselContainer .buttonsContainer {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-main .examplesContainer #c11 .buttonsContainer .arrow3Container {
+main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container {
   height: 62px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .examplesContainer #c11 .buttonsContainer .arrow3Container .arrow3 {
+main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3 {
   border: solid #fff;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -226,27 +226,27 @@ main .examplesContainer #c11 .buttonsContainer .arrow3Container .arrow3 {
   background-color: transparent;
   width: 22px;
 }
-main .examplesContainer #c11 .buttonsContainer .arrow3Container .arrow3:before {
+main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3:before {
   content: "(CSS)";
   position: absolute;
 }
-main .examplesContainer #c11 .buttonsContainer .arrow3Container .arrow3.previous {
+main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.previous {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   left: 5px;
 }
-main .examplesContainer #c11 .buttonsContainer .arrow3Container .arrow3.previous:before {
+main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.previous:before {
   transform: rotate(224deg);
   -webkit-transform: rotate(224deg);
   top: 52px;
   left: 46px;
 }
-main .examplesContainer #c11 .buttonsContainer .arrow3Container .arrow3.next {
+main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.next {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   right: 5px;
 }
-main .examplesContainer #c11 .buttonsContainer .arrow3Container .arrow3.next:before {
+main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.next:before {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   top: 48px;
@@ -254,16 +254,16 @@ main .examplesContainer #c11 .buttonsContainer .arrow3Container .arrow3.next:bef
   bottom: 0;
   left: 55px;
 }
-main .examplesContainer #c11 .arrow4 img {
+main .examplesContainer#c11 .carouselContainer .arrow4 img {
   width: 50px;
 }
-main .examplesContainer #c11 .arrow4.previous:after {
+main .examplesContainer#c11 .carouselContainer .arrow4.previous:after {
   content: "(Image)";
   position: absolute;
   top: 20px;
   left: -56px;
 }
-main .examplesContainer #c11 .arrow4.next:after {
+main .examplesContainer#c11 .carouselContainer .arrow4.next:after {
   content: "(Image)";
   position: absolute;
   top: 20px;
