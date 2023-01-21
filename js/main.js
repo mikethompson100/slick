@@ -1,4 +1,4 @@
-const carouselTotal = 12;
+const carouselTotal = 14;
 const imagesTotal = 6;
 
 function setupImages(carouselTotal) { // add same group of image nodes to each carousel
@@ -102,11 +102,19 @@ $('#carousel11').slick({
 }); 
 
 $('#carousel12').slick({
-  slidesToShow: 1,
   centerMode: true,
   centerPadding: '20px'
 }); 
 
+$('#carousel13').slick({
+  speed: 1500,
+  cssEase: 'steps(5)'
+}); 
+
+$('#carousel14').slick({
+  speed: 1000,
+  cssEase: 'cubic-bezier(0.1, 0.7, 1.0, 0.1)'
+}); 
 
 }; 
 

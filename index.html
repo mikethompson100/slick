@@ -213,11 +213,38 @@ $("#carousel7").slick({
       </div>
       <pre><code>
       $('#carousel12').slick({    
-        slidesToShow: 1,
         centerMode: true,
         <b class="orange">centerPadding: '20px',
         <em>(Use when centermode is true)</em></b>
       });
+      </code></pre>
+    </div>
+    <div class="examplesContainer">
+      <h2>Example 13 - cssEase: steps()</h2>
+      <h3>6 slides</h3>
+      <div class="carouselContainer">
+        <div id="carousel13" class="carousel"></div>
+      </div>
+      <pre><code>
+        $('#carousel13').slick({
+          speed: 1500,
+          <b>cssEase: 'steps(5)'</b>
+        }); 
+      </code></pre>
+    </div>
+    <div class="examplesContainer">
+      <h2>Example 14 - cssEase:</h2> 
+      <h3><a href="https://www.w3schools.com/cssref/func_cubic-bezier.php" target="_blank">cubic-bezier(x1,y1,x2,y2)</a></h3>
+      <h3>6 slides</h3>
+      <div class="carouselContainer">
+        <div id="carousel14" class="carousel"></div>
+      </div>
+      <pre><code>
+      $('#carousel14').slick({
+        useTransform: true,  (default)
+        speed: 1000,
+        <b>cssEase: 'cubic-bezier(0.1, 0.7, 1.0, 0.1)'</b>
+      }); 
       </code></pre>
     </div>
   </main>
