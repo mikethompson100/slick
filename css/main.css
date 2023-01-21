@@ -82,6 +82,9 @@ main .examplesContainer pre code b {
 main .examplesContainer pre code b.purple {
   color: purple;
 }
+main .examplesContainer pre code b.orange {
+  color: orange;
+}
 main .examplesContainer .appendArrowsMobileContainer {
   border: 1px dotted red;
   margin: 0 auto;
@@ -268,6 +271,17 @@ main .examplesContainer#c11 .carouselContainer .arrow4.next:after {
   position: absolute;
   top: 20px;
   left: 84px;
+}
+main .examplesContainer#c12 .slick-list {
+  border-left: 3px solid orange;
+  border-right: 3px solid orange;
+}
+main .examplesContainer#c12 .slick-list img {
+  outline: 3px solid orange;
+  outline-offset: -3px;
+}
+main .examplesContainer#c12 .slick-list img.slick-active {
+  outline: none;
 }
 
 footer h2 a {

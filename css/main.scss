@@ -38,6 +38,7 @@ main {
                     b { 
                         color: green; font-weight: 700; line-height: 1.3em; text-align: left;
                         &.purple { color: purple; }
+                        &.orange { color: orange; }
                     }
                 }
             }            
@@ -137,6 +138,19 @@ main {
                             &.previous:after { content: "(Image)"; position: absolute; top: 20px; left: -56px; };  
                             &.next:after { content: "(Image)"; position: absolute; top: 20px; left: 84px; };  
                         }
+                }
+            }
+            &#c12 {
+                .slick-list {
+                    border-left: 3px solid orange;
+                    border-right: 3px solid orange;
+                    img {
+                        outline: 3px solid orange;
+                        outline-offset: -3px;
+                        &.slick-active {
+                            outline: none;
+                        }
+                    }
                 }
             }
     }

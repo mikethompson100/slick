@@ -1,4 +1,4 @@
-const carouselTotal = 11;
+const carouselTotal = 12;
 const imagesTotal = 6;
 
 function setupImages(carouselTotal) { // add same group of image nodes to each carousel
@@ -76,7 +76,6 @@ $("#carousel9").slick({
   focusOnSelect: true
 });
 
-
 $("#carousel10").slick({
   slidesToShow: 3,
   arrows: true,
@@ -93,7 +92,6 @@ $("#carousel10").slick({
   ]
 });
 
-
 $('#carousel11').slick({
   slidesToShow: 3,
   dots: true,
@@ -103,8 +101,15 @@ $('#carousel11').slick({
   nextArrow: '.next'
 }); 
 
+$('#carousel12').slick({
+  slidesToShow: 1,
+  centerMode: true,
+  centerPadding: '20px'
+}); 
+
 
 }; 
+
 
 // galleryInit is an asynchronous function that returns a promise of the images being loaded.
 async function galleryInit() { return setupImages(carouselTotal) }

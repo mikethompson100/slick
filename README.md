@@ -15,3 +15,9 @@ Notes: 1/11/23: Finished setting up carousel 10 demonstrating the use of appendA
 Notes: 1/14/23: Finished setting up new carousel 11 demonstrating prevArrow/nextArrow and also appendDots. Displaying different options for arrows (text, text arrows, css arrow, image arrow).
 
 Notes: 1/19/23: Cleaning up structure of scss file. 
+
+Notes: 1/21/23: Setup Carousel 12 for centerPadding. Added styles to highlight padding area.
+
+
+
+
