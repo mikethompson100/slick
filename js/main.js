@@ -1,4 +1,4 @@
-const carouselTotal = 14;
+const carouselTotal = 15;
 const imagesTotal = 6;
 
 function setupImages(carouselTotal) { // add same group of image nodes to each carousel
@@ -24,7 +24,7 @@ function setupImages(carouselTotal) { // add same group of image nodes to each c
           container.appendChild(node);
         } 
   }
-}
+} 
 
 function initCarousels() { // run all slick carousels
   
@@ -115,6 +115,14 @@ $('#carousel14').slick({
   speed: 1000,
   cssEase: 'cubic-bezier(0.1, 0.7, 1.0, 0.1)'
 }); 
+
+$('#carousel15').slick({
+  dots: true,
+  customPaging : function(slider, i) {
+      return $('<img src="img/0' + (i+1) + 'dots.svg">').text(i + 1);
+  }
+});
+
 
 }; 
 

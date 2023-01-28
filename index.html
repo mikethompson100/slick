@@ -247,6 +247,24 @@ $("#carousel7").slick({
       }); 
       </code></pre>
     </div>
+    
+    <div class="examplesContainer">
+      <h2>Example 15 - Carousel</h2>
+      <h3>6 slides</h3>
+      <div class="carouselContainer">
+        <div id="carousel15" class="carousel">    
+        </div>
+      </div>
+<pre><code>
+    $('.carousel15').slick({
+      dots: true,
+      customPaging : function(slider, i) {
+          return $('<img src="img/0' + (i+1) + 'dots.svg">').text(i + 1);
+      }
+    });
+    
+</code></pre>
+    </div>
   </main>
   <footer id="defaults">
     <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>
