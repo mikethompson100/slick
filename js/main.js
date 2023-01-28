@@ -124,7 +124,6 @@ $('#carousel15').slick({
 });
 
 $('#carousel16').slick({
-    dotsClass:'#dotsClass',
     draggable: false,
     easing: 'easeOutBack'
 });
