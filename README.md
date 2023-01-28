@@ -20,6 +20,7 @@ Notes: 1/21/23: Setup Carousel 12 for centerPadding. Added styles to highlight p
 Setup Carousel 13 with cssEase: 'steps(5)'.
 Setup Carousel 14 with cssEase: 'cubic-bezier(0.1, 0.7, 1.0, 0.1)'.
 
+Notes: 1/28/23: Built carousel 15 to include customPaging for the dots area. Also started Carousel 16.
 
 
 
