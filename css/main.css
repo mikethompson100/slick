@@ -85,6 +85,10 @@ main .examplesContainer pre code b.purple {
 main .examplesContainer pre code b.orange {
   color: orange;
 }
+main .examplesContainer pre code b.yellow {
+  color: yellow;
+  text-shadow: 1px 1px #000;
+}
 main .examplesContainer .appendArrowsMobileContainer {
   border: 1px dotted red;
   margin: 0 auto;
@@ -282,6 +286,23 @@ main .examplesContainer#c12 .slick-list img {
 }
 main .examplesContainer#c12 .slick-list img.slick-active {
   outline: none;
+}
+main .examplesContainer#c15 pre img {
+  top: 2px;
+  position: relative;
+}
+main .examplesContainer#c15 .slick-dots .slick-active {
+  border: 3px dotted yellow;
+}
+@media (max-width: 767px) {
+  main .examplesContainer#c15 .max767px {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  main .examplesContainer#c15 .min768px {
+    display: none;
+  }
 }
 
 footer h2 a {

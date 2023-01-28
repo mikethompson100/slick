@@ -248,21 +248,37 @@ $("#carousel7").slick({
       </code></pre>
     </div>
     
-    <div class="examplesContainer">
-      <h2>Example 15 - Carousel</h2>
+    <div id="c15" class="examplesContainer">
+      <h2>Example 15 - customPaging</h2>
       <h3>6 slides</h3>
+      <h4>Demonstrating the use of customPaging to perform special operations on the dots.</h4>
+      <h4>The value of i in the function iterates through and builds the image path and filenames of the numerical images.</h4>
       <div class="carouselContainer">
         <div id="carousel15" class="carousel">    
         </div>
       </div>
-<pre><code>
+<pre class="max767px"><code>
     $('.carousel15').slick({
       dots: true,
-      customPaging : function(slider, i) {
-          return $('<img src="img/0' + (i+1) + 'dots.svg">').text(i + 1);
-      }
+      <b class="yellow">customPaging : function(slider, i) {
+          return $('&lt;img src="img/0' + (i+1) + 'dots.svg"&gt;').text(i + 1);
+      }</b>
     });
     
+    Example: <img src="img/01dots.svg" />  &lt;img src="img/01dots.svg"&gt;
+    
+</code></pre>
+<pre class="min768px"><code>
+ $('.carousel15').slick({
+   dots: true,
+   <b class="yellow">customPaging : function(slider, i) {
+       return $('&lt;img src="img/0' + (i+1) 
+              + 'dots.svg"&gt;').text(i + 1);
+   }</b>
+ });
+  
+  Example: <img src="img/01dots.svg" />  &lt;img src="img/01dots.svg"&gt; 
+  
 </code></pre>
     </div>
   </main>
