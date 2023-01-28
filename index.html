@@ -222,6 +222,7 @@ $("#carousel7").slick({
     <div class="examplesContainer">
       <h2>Example 13 - cssEase: steps()</h2>
       <h3>6 slides</h3>
+      <h4>Easing example</h4>
       <div class="carouselContainer">
         <div id="carousel13" class="carousel"></div>
       </div>
@@ -246,8 +247,7 @@ $("#carousel7").slick({
         <b>cssEase: 'cubic-bezier(0.1, 0.7, 1.0, 0.1)'</b>
       }); 
       </code></pre>
-    </div>
-    
+    </div>    
     <div id="c15" class="examplesContainer">
       <h2>Example 15 - customPaging</h2>
       <h3>6 slides</h3>
@@ -257,28 +257,31 @@ $("#carousel7").slick({
         <div id="carousel15" class="carousel">    
         </div>
       </div>
-<pre class="max767px"><code>
-    $('.carousel15').slick({
-      dots: true,
-      <b class="yellow">customPaging : function(slider, i) {
-          return $('&lt;img src="img/0' + (i+1) + 'dots.svg"&gt;').text(i + 1);
-      }</b>
-    });
-    
-    Example: <img src="img/01dots.svg" />  &lt;img src="img/01dots.svg"&gt;
-    
-</code></pre>
-<pre class="min768px"><code>
+<pre><code>
  $('.carousel15').slick({
    dots: true,
    <b class="yellow">customPaging : function(slider, i) {
-       return $('&lt;img src="img/0' + (i+1) 
-              + 'dots.svg"&gt;').text(i + 1);
+       return $('&lt;img src="img/0' + (i+1) <span class="break"><br />       </span>+ 'dots.svg"&gt;').text(i + 1);
    }</b>
  });
   
   Example: <img src="img/01dots.svg" />  &lt;img src="img/01dots.svg"&gt; 
   
+</code></pre>
+    </div>
+    <div class="examplesContainer">
+      <h2>Example 16 - dotsClass/draggable/easing</h2>
+      <h3>6 slides</h3>
+      <div class="carouselContainer">
+        <div id="carousel16" class="carousel"></div>
+      </div>
+<pre><code>
+    $('.carousel1').slick({
+      dotsClass:'#dotsClass',
+      draggable: false,
+      easing: 'easeOutElastic'
+    });
+
 </code></pre>
     </div>
   </main>

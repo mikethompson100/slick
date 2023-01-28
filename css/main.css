@@ -294,13 +294,8 @@ main .examplesContainer#c15 pre img {
 main .examplesContainer#c15 .slick-dots .slick-active {
   border: 3px dotted yellow;
 }
-@media (max-width: 767px) {
-  main .examplesContainer#c15 .max767px {
-    display: none;
-  }
-}
 @media (min-width: 768px) {
-  main .examplesContainer#c15 .min768px {
+  main .examplesContainer#c15 .break {
     display: none;
   }
 }

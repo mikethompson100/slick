@@ -164,12 +164,7 @@ main {
                 .slick-dots {
                     .slick-active { border: 3px dotted yellow; }
                 }
-                @media(max-width: 767px) { 
-                    .max767px { display: none; }  
-                }
-                @media(min-width: 768px) { 
-                    .min768px { display: none; } 
-                }
+                @media(min-width: 768px) {.break { display: none; } }
             }
     }
 }
