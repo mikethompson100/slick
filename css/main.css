@@ -287,10 +287,6 @@ main .examplesContainer#c12 .slick-list img {
 main .examplesContainer#c12 .slick-list img.slick-active {
   outline: none;
 }
-main .examplesContainer#c15 pre img {
-  top: 2px;
-  position: relative;
-}
 main .examplesContainer#c15 .slick-dots .slick-active {
   border: 3px dotted yellow;
 }
@@ -298,6 +294,10 @@ main .examplesContainer#c15 .slick-dots .slick-active {
   main .examplesContainer#c15 .break {
     display: none;
   }
+}
+main .examplesContainer#c15 pre img {
+  top: 2px;
+  position: relative;
 }
 
 footer h2 a {

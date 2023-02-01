@@ -265,7 +265,7 @@ $("#carousel7").slick({
    }</b>
  });
   
-  Example: <img src="img/01dots.svg" />  &lt;img src="img/01dots.svg"&gt; 
+  Example: <img src="img/02dots.svg" />  &lt;img src="img/02dots.svg"&gt; 
   
 </code></pre>
     </div>
@@ -280,6 +280,23 @@ $("#carousel7").slick({
       <b>draggable: false,
       easing: 'step-start',</b>
       speed: 3000
+    });
+
+</code></pre>
+    </div>
+    <div id="c17" class="examplesContainer">
+      <h2>Example 17 - edgeFriction</h2>
+      <h3>6 slides</h3>
+      <h3>When swiping beyond a non-infinite carousel's edge, edgeFriction allows for a specific visual kickback amount.</h3>
+      <h3>An integer is required. The default value is .15</h3>
+      <div class="carouselContainer">
+        <div id="carousel17" class="carousel"></div>
+      </div>
+<pre><code>
+
+    $('.carousel17').slick({
+      <b>edgeFriction: 0.5,</b>
+      infinite: false  (required for edgeFriction)
     });
 
 </code></pre>

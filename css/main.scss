@@ -155,18 +155,18 @@ main {
                 }
             }
             &#c15 {
-                pre { 
-                    img { 
-                        top: 2px;
-                        position: relative;
-                }
-            }
                 .slick-dots {
                     .slick-active { border: 3px dotted yellow; }
                 }
                 @media(min-width: 768px) {.break { display: none; } }
+                pre { 
+                    img { 
+                        top: 2px;
+                        position: relative;
+                     }
+                }
             }
-    }
+        }
 }
 footer {
     h2 {

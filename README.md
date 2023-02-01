@@ -22,6 +22,9 @@ Setup Carousel 14 with cssEase: 'cubic-bezier(0.1, 0.7, 1.0, 0.1)'.
 
 Notes: 1/28/23: Built carousel 15 to include customPaging for the dots area. Also started Carousel 16.
 
+Notes: 1/31/23: Carousel 16 with draggable/easing is finished. Also finished example of edgeFriction on Carousel 17.
+
+
 
 
 
