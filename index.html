@@ -270,15 +270,16 @@ $("#carousel7").slick({
 </code></pre>
     </div>
     <div class="examplesContainer">
-      <h2>Example 16 - dotsClass/draggable/easing</h2>
+      <h2>Example 16 - draggable/easing</h2>
       <h3>6 slides</h3>
       <div class="carouselContainer">
         <div id="carousel16" class="carousel"></div>
       </div>
 <pre><code>
     $('.carousel16').slick({
-      draggable: false,
-      easing: 'easeOutBack'
+      <b>draggable: false,
+      easing: 'step-start',</b>
+      speed: 3000
     });
 
 </code></pre>

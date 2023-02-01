@@ -125,7 +125,8 @@ $('#carousel15').slick({
 
 $('#carousel16').slick({
     draggable: false,
-    easing: 'easeOutBack'
+    easing: 'step-start',
+    speed: 3000
 });
 
 }; 
