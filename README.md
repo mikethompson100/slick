@@ -30,4 +30,5 @@ Notes: 2/2/23 - 2/4/23: Created Carousel 18 for lazyLoad. There was a lot to lea
  (2) For each image in the carousel, an attribute called "data-lazy" needs to be added (instead of src) containing the path to the image file (ex: <img data-lazy="img/002.jpg">). When the image is loaded on demand, the image tag's "data-lazy" attribute is converted to the usual src. 
  (3) One catch is that the image tags need to be surrounded with parent tags (divs) in order for it to work correctly with lazyLoad. 
 
+I also noticed that the first slide image is loaded at page load and also the last one for some reason. Still learning.
 
