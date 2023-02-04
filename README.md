@@ -24,6 +24,7 @@ Notes: 1/28/23: Built carousel 15 to include customPaging for the dots area. Als
 
 Notes: 1/31/23: Carousel 16 with draggable/easing is finished. Also finished example of edgeFriction on Carousel 17.
 
+Notes: 2/2/23 - 2/4/23: Created Carousel 18 for lazyLoad. There was a lot to learn about on this one. 
 
 
 

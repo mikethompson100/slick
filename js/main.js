@@ -1,30 +1,51 @@
-const carouselTotal = 17;
+const carouselTotal = 18;
 const imagesTotal = 6;
 
-function setupImages(carouselTotal) { // add same group of image nodes to each carousel
-  let numOfCarousels = carouselTotal;
-  for (let i = 1;  i < numOfCarousels+1; i++) {
-      let string = "carousel" + i;
-      var container = document.getElementById(string);
-       for (var j = 1; j <= imagesTotal; j++) {
-          var node = new Image();
-          if (j === 2 && i === 4) { 
-            node.src = 'img/0' + j + 'tall' + '.jpg'; 
-          }
-          else node.src = 'img/0' + j + '.jpg';
-          switch (j) {
-            case 1: node.alt = "A photo of the city Zahara de la Sierra in Spain."; break;
-            case 2: node.alt = "A photo of a building in Malaga, Spain."; break;
-            case 3: node.alt = "A photo of a bull statue in the city of Ronda, Spain."; break;
-            case 4: node.alt = "A photo of gardens in the city of Granada, Spain."; break;
-            case 5: node.alt = "A photo of houses in Ronda, Spain."; break;
-          case 6: node.alt = "A photo of the city of Granada, Spain."; break;
-          }
-          
-          container.appendChild(node);
-        } 
+function standardAltTags(j, node) {
+  switch (j) {
+    case 1: node.alt = "A photo of the city Zahara de la Sierra in Spain."; break;
+    case 2: node.alt = "A photo of a building in Malaga, Spain."; break;
+    case 3: node.alt = "A photo of a bull statue in the city of Ronda, Spain."; break;
+    case 4: node.alt = "A photo of gardens in the city of Granada, Spain."; break;
+    case 5: node.alt = "A photo of houses in Ronda, Spain."; break;
+    case 6: node.alt = "A photo of the city of Granada, Spain."; break;
   }
-} 
+}
+
+function setupImages(carouselTotal) { // add same group of image nodes to each carousel
+   let numOfCarousels = carouselTotal;
+  for (let i = 1;  i < numOfCarousels+1; i++) {
+    let string = "carousel" + i;
+    var container = document.getElementById(string);
+     for (var j = 1; j <= imagesTotal; j++) {
+        var node = new Image();
+        if (i === 18) {  // lazyLoad special carousel/images
+              switch (j) {
+                case 1: node.alt = "White, red and yellow sports cars at a car show."; break;
+                case 2: node.alt = "Red sports car at a car show."; break;
+                case 3: node.alt = "Yellow Lamborghini at a car show."; break;
+                case 4: node.alt = "Row of cars at a car show."; break;
+                case 5: node.alt = "Car show."; break;
+                case 6: node.alt = "Car show."; break;
+              }
+              let imgPath = 'img/00' + j + '.jpg';
+              node.setAttribute("data-lazy", imgPath);
+              container.appendChild(node);
+              node.outerHTML = '<div>' + node.outerHTML + '</div>';
+        }
+        else if (j === 2 && i === 4) { //Carousel 4 showcasing adaptiveHeight tall image
+              node.src = 'img/0' + j + 'tall' + '.jpg';           
+              container.appendChild(node);
+              standardAltTags(j,node);
+        }
+        else {  // all other carousels
+              node.src = 'img/0' + j + '.jpg';
+              container.appendChild(node);
+              standardAltTags(j,node);
+        }
+      } 
+  } 
+ } 
 
 function initCarousels() { // run all slick carousels
   
@@ -129,10 +150,14 @@ $('#carousel16').slick({
     speed: 3000
 });
 
-
 $('#carousel17').slick({
    edgeFriction: .5,
    infinite: false
+}); 
+ 
+$('#carousel18').slick({
+  lazyLoad:'ondemand',
+  speed: 100
 });
 
 }; 
@@ -141,5 +166,6 @@ $('#carousel17').slick({
 // galleryInit is an asynchronous function that returns a promise of the images being loaded.
 async function galleryInit() { return setupImages(carouselTotal) }
 
-// The galleryInit call waits for the images to be loaded before running slick.
+// The galleryInit call waits for the image nodes to be created before running slick.
 galleryInit().then(initCarousels()); 
+

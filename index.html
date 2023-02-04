@@ -287,7 +287,7 @@ $("#carousel7").slick({
     <div id="c17" class="examplesContainer">
       <h2>Example 17 - edgeFriction</h2>
       <h3>6 slides</h3>
-      <h3>When swiping beyond a non-infinite carousel's edge, edgeFriction allows for a specific visual kickback amount.</h3>
+      <h3>When swiping or dragging beyond a non-infinite carousel's edge, edgeFriction allows for a specific visual kickback amount.</h3>
       <h3>An integer is required. The default value is .15</h3>
       <div class="carouselContainer">
         <div id="carousel17" class="carousel"></div>
@@ -297,6 +297,24 @@ $("#carousel7").slick({
     $('.carousel17').slick({
       <b>edgeFriction: 0.5,</b>
       infinite: false  (required for edgeFriction)
+    });
+
+</code></pre>
+    </div>
+    <div id="c18" class="examplesContainer">
+      <h2>Example 18 - lazyLoad</h2>
+      <h3>6 slides</h3>
+      <h4>Loading carousel images into the browser on a 'needed' basis and not all at page load time for efficiency.</h4>
+      <h4>Speed: 100 is chosen to exaggerate the loading effect (will flash white). Once all 6 are loaded it returns to the usual smooth transition.</h4>
+      <div class="carouselContainer">
+        <div id="carousel18" class="carousel">
+        </div>
+      </div>
+<pre><code>
+
+    $('.carousel18').slick({
+      lazyLoad: 'ondemand',
+      speed: 100
     });
 
 </code></pre>
@@ -553,6 +571,7 @@ $("#carousel7").slick({
   </footer>
   <script src="vendor/js/jquery-3.6.1.min.js"></script>
   <script src="vendor/js/slick/slick.min.js"></script>
+  <script src="vendor/js/lazyload.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
