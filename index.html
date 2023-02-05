@@ -319,6 +319,39 @@ $("#carousel7").slick({
 
 </code></pre>
     </div>
+    <div class="examplesContainer">
+      <h2>Example 19 - lazyLoaded/lazyLoadError events</h2>
+      <h3>6 slides</h3>
+      <h3>Events for managing lazyloading</h3>
+      <h3>Message displays announcing the success or failure of each image load.</h3>
+      <div class="carouselContainer">
+        <div id="carousel19" class="carousel">
+        </div>
+      </div>
+      <h3 id="demo"></h3>
+<pre><code>
+
+  $('#carousel19').slick({
+    lazyLoad:'ondemand',
+    speed: 100
+  });
+  
+  $('#carousel19').on('lazyLoaded', function (e, slider, image, imageSource) {
+      var messageLocation = document.getElementById("demo");
+      const node = document.createElement("div");
+      node.innerHTML = imageSource + " loaded on the page.";
+      messageLocation.appendChild(node);
+  });
+  
+  $('#carousel19').on('lazyLoadError', function (e, slider, image, imageSource) {
+    var messageLocation = document.getElementById("demo");
+    const node = document.createElement("div");
+    node.innerHTML = imageSource + " failed to load successfully.";
+    messageLocation.appendChild(node);
+  });
+
+</code></pre>
+    </div>
   </main>
   <footer id="defaults">
     <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>

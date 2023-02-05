@@ -1,4 +1,4 @@
-const carouselTotal = 18;
+const carouselTotal = 19;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -19,7 +19,7 @@ function setupImages(carouselTotal) { // add same group of image nodes to each c
     var container = document.getElementById(string);
      for (var j = 1; j <= imagesTotal; j++) {
         var node = new Image();
-        if (i === 18) {  // lazyLoad special carousel/images
+        if (i === 18 || i === 19) {  // lazyLoad special carousel/images
               switch (j) {
                 case 1: node.alt = "White, red and yellow sports cars at a car show."; break;
                 case 2: node.alt = "Red sports car at a car show."; break;
@@ -29,6 +29,12 @@ function setupImages(carouselTotal) { // add same group of image nodes to each c
                 case 6: node.alt = "Car show."; break;
               }
               let imgPath = 'img/00' + j + '.jpg';
+              if (i === 19 && j === 3) {
+                imgPath = 'img/00' + j + 'a' + '.jpg';
+              }
+              else {
+                imgPath = 'img/00' + j + '.jpg';
+              }              
               node.setAttribute("data-lazy", imgPath);
               container.appendChild(node);
               node.outerHTML = '<div>' + node.outerHTML + '</div>';
@@ -159,6 +165,27 @@ $('#carousel18').slick({
   lazyLoad:'ondemand',
   speed: 100
 });
+
+
+$('#carousel19').slick({
+  lazyLoad:'ondemand',
+  speed: 100
+});
+
+$('#carousel19').on('lazyLoaded', function (e, slider, image, imageSource) {
+    var messageLocation = document.getElementById("demo");
+    const node = document.createElement("div");
+    node.innerHTML = imageSource + " loaded on the page.";
+    messageLocation.appendChild(node);
+});
+
+$('#carousel19').on('lazyLoadError', function (e, slider, image, imageSource) {
+  var messageLocation = document.getElementById("demo");
+  const node = document.createElement("div");
+  node.innerHTML = imageSource + " failed to load successfully.";
+  messageLocation.appendChild(node);
+});
+
 
 }; 
 
