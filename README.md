@@ -32,3 +32,5 @@ Notes: 2/2/23 - 2/4/23: Created Carousel 18 for lazyLoad. There was a lot to lea
 
 I also noticed that the first slide image is loaded at page load and also the last one for some reason. Still learning.
 
+Notes: 2/4/23: Built Carousel 19 showcasing the lazyloaded and lazyLoadError events. Still in progress.
+
