@@ -169,7 +169,8 @@ $('#carousel18').slick({
 
 $('#carousel19').slick({
   lazyLoad:'ondemand',
-  speed: 100
+  speed: 100,
+  infinite: false
 });
 
 $('#carousel19').on('lazyLoaded', function (e, slider, image, imageSource) {
