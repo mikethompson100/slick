@@ -1,4 +1,4 @@
-const carouselTotal = 19;
+const carouselTotal = 20;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -173,20 +173,35 @@ $('#carousel19').slick({
   infinite: false
 });
 
-$('#carousel19').on('lazyLoaded', function (e, slider, image, imageSource) {
-    var messageLocation = document.getElementById("demo");
-    const node = document.createElement("div");
-    node.innerHTML = imageSource + " loaded on the page.";
-    messageLocation.appendChild(node);
-});
+      $('#carousel19').on('lazyLoaded', function (e, slider, image, imageSource) {
+          var messageLocation = document.getElementById("demo");
+          const node = document.createElement("h5");
+          node.classList.add('green');
+          node.innerHTML = imageSource + " loaded on the page.";
+          messageLocation.appendChild(node);
+      });
 
-$('#carousel19').on('lazyLoadError', function (e, slider, image, imageSource) {
-  var messageLocation = document.getElementById("demo");
-  const node = document.createElement("div");
-  node.innerHTML = imageSource + " failed to load successfully.";
-  messageLocation.appendChild(node);
-});
+      $('#carousel19').on('lazyLoadError', function (e, slider, image, imageSource) {
+        var messageLocation = document.getElementById("demo");
+        const node = document.createElement("h5");
+        node.classList.add('red');
+        node.innerHTML = imageSource + " failed to load successfully.";
+        messageLocation.appendChild(node);
+      });
 
+
+$('#carousel20').slick({
+  mobileFirst: true,
+  initialSlide: 5,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        initialSlide: 0
+      }
+    }
+   ]
+});
 
 }; 
 

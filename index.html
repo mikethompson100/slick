@@ -319,21 +319,23 @@ $("#carousel7").slick({
 
 </code></pre>
     </div>
-    <div class="examplesContainer">
+    <div id="c19" class="examplesContainer">
       <h2>Example 19 - lazyLoaded/lazyLoadError events</h2>
       <h3>6 slides</h3>
       <h3>Events for managing lazyloading</h3>
       <h3>Message displays announcing the success or failure of each image load.</h3>
+      <h4>Note: 'infinite: false' has also been added, otherwise the carousel seems to load the last image as well. Not sure if it is a bug or feature.</h4>
       <div class="carouselContainer">
         <div id="carousel19" class="carousel">
         </div>
       </div>
-      <h3 id="demo"></h3>
+      <h4 id="demo"></h4>
 <pre><code>
 
   $('#carousel19').slick({
     lazyLoad:'ondemand',
-    speed: 100
+    speed: 100,
+    infinite: false
   });
   
   $('#carousel19').on('lazyLoaded', function (e, slider, image, imageSource) {
@@ -349,6 +351,30 @@ $("#carousel7").slick({
     node.innerHTML = imageSource + " failed to load successfully.";
     messageLocation.appendChild(node);
   });
+
+</code></pre>
+    </div>
+    <div class="examplesContainer">
+      <h2>Example 20 - mobileFirst/initialSlide</h2>
+      <h3>6 slides</h3>
+      <h4>The default for mobileFirst is false which activates the responsive settings for mobile. When mobileFirst is switched to true, responsive settings are for desktop.</h4>
+      <h4>In this example, initialSlide is showcased as the differentiating feature between mobile and desktop that selects the starting slide position.</h4>
+      <div class="carouselContainer">
+        <div id="carousel20" class="carousel"></div>
+      </div>
+<pre><code>
+    $('.carousel20').slick({
+      <b>mobileFirst: true,</b>
+      initialSlide: 5,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            initialSlide: 0
+          }
+        }
+       ]
+    });
 
 </code></pre>
     </div>

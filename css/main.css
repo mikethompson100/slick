@@ -9,8 +9,22 @@ header h3 a {
   color: #000;
 }
 
+#demo {
+  border: 1px solid black;
+  max-width: 400px;
+  margin: auto;
+}
+#demo .green {
+  color: green;
+  text-shadow: 1px 1px black;
+}
+#demo .red {
+  color: red;
+  text-shadow: 1px 1px black;
+}
+
 main .examplesContainer {
-  padding: 25px 0 45px 0;
+  padding: 25px 5px 45px 5px;
 }
 main .examplesContainer:nth-child(odd) {
   background: rgb(151, 180, 211);
@@ -71,7 +85,20 @@ main .examplesContainer pre {
   }
 }
 main .examplesContainer pre code {
+  font-size: 9px;
+  overflow: auto;
   text-align: left;
+}
+@media (min-width: 650px) {
+  main .examplesContainer pre code {
+    font-size: 11px;
+    overflow: visible;
+  }
+}
+@media (min-width: 768px) {
+  main .examplesContainer pre code {
+    font-size: 16px;
+  }
 }
 main .examplesContainer pre code b {
   color: green;
@@ -299,6 +326,21 @@ main .examplesContainer#c15 pre img {
   top: 2px;
   position: relative;
 }
+main .examplesContainer#c19 pre code {
+  font-size: 9px;
+  overflow: auto;
+}
+@media (min-width: 650px) {
+  main .examplesContainer#c19 pre code {
+    font-size: 11px;
+    overflow: visible;
+  }
+}
+@media (min-width: 768px) {
+  main .examplesContainer#c19 pre code {
+    font-size: 16px;
+  }
+}
 
 footer h2 a {
   color: #000;
@@ -310,14 +352,14 @@ footer table {
   width: 80%;
   margin: 0 auto;
 }
-footer table * {
-  border: 1px solid #777;
-}
 @media (max-width: 767px) {
   footer table {
-    font-size: 1em;
+    font-size: 0.9em;
     width: 100%;
   }
+}
+footer table * {
+  border: 1px solid #777;
 }
 footer table tr th, footer table tr td {
   text-align: left;
