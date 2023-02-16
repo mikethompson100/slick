@@ -341,6 +341,15 @@ main .examplesContainer#c19 pre code {
     font-size: 16px;
   }
 }
+main .examplesContainer#c21 .slick-track img:focus {
+  outline: 2px dotted red;
+  outline-offset: -2px;
+}
+@media (min-width: 768px) {
+  main .examplesContainer#c21 .slick-track img:focus {
+    outline: 4px dotted red;
+  }
+}
 
 footer h2 a {
   color: #000;

@@ -378,6 +378,26 @@ $("#carousel7").slick({
 
 </code></pre>
     </div>
+    <div id="c21" class="examplesContainer">
+      <h2>Example 21 - pauseOnFocus / pauseOnHover / pauseOnDotsHover</h2>
+      <h3>6 slides</h3>
+      <h4>Examples of hovering features which require autoplay: true. The two defaults show autoplay pausing on hovering and also focusing either on the slide image itself or the arrows that control the slides.</h4>
+      <h4>The pauseOnDotsHover requires dots: true and pauses the slideshow when the dots are hovered or focused on. On mobile view, only focusing on the dots causes the pause.</h4>
+      <div class="carouselContainer">
+        <div id="carousel21" class="carousel"></div>
+      </div>
+<pre><code>
+
+  $('#carousel21').slick({
+    autoplay: true,
+    pauseOnFocus: true,  (default)
+    pauseOnHover: true,  (default)
+    <b>dots: true,
+    pauseOnDotsHover: true</b>
+  });
+
+</code></pre>
+    </div>
   </main>
   <footer id="defaults">
     <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>

@@ -34,7 +34,7 @@ I also noticed that the first slide image is loaded at page load and also the la
 
 Notes: 2/4/23: Built Carousel 19 showcasing the lazyloaded and lazyLoadError events. Still in progress.
 
-Notes: 2/12/23: Built Carousel 20 showcasing mobileFirst and initialSlide. 
+Notes: 2/12/23: Built Carousel 20 showcasing mobileFirst and initialSlide.
 
 
 
