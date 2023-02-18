@@ -2,128 +2,121 @@ body {
   text-align: center;
   font-family: Verdana;
 }
-
-header {
+body .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: orange;
+  padding: 5px;
+  font-size: 20px;
+  z-index: 2;
+}
+body header {
   margin: 40px 0;
 }
-header h3 a {
+body header h3 a {
   color: #000;
 }
-
-#demo {
-  border: 1px solid black;
-  max-width: 400px;
-  margin: auto;
-}
-#demo .green {
-  color: green;
-  text-shadow: 1px 1px black;
-}
-#demo .red {
-  color: red;
-  text-shadow: 1px 1px black;
-}
-
-main .examplesContainer {
+body main .examplesContainer {
   padding: 25px 5px 45px 5px;
 }
-main .examplesContainer:nth-child(odd) {
+body main .examplesContainer:nth-child(odd) {
   background: rgb(151, 180, 211);
 }
-main .examplesContainer:nth-child(even) {
+body main .examplesContainer:nth-child(even) {
   background: #fff;
 }
 @media (min-width: 768px) {
-  main .examplesContainer h4, main .examplesContainer h5 {
+  body main .examplesContainer h4, body main .examplesContainer h5 {
     max-width: 700px;
     margin: 20px auto;
   }
 }
-main .examplesContainer .carouselContainer {
+body main .examplesContainer .carouselContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-main .examplesContainer .carouselContainer .carousel {
+body main .examplesContainer .carouselContainer .carousel {
   max-width: 519px;
 }
 @media (max-width: 767px) {
-  main .examplesContainer .carouselContainer .carousel {
+  body main .examplesContainer .carouselContainer .carousel {
     max-width: 80%;
   }
 }
-main .examplesContainer .carouselContainer .carousel .slick-dots button {
+body main .examplesContainer .carouselContainer .carousel .slick-dots button {
   padding-top: 1px;
 }
-main .examplesContainer .carouselContainer .carousel .slick-dots button:focus {
+body main .examplesContainer .carouselContainer .carousel .slick-dots button:focus {
   outline: 1px dashed blue;
   outline-offset: -3px;
   border-radius: 10px;
 }
-main .examplesContainer .carouselContainer .carousel .slick-prev, main .examplesContainer .carouselContainer .carousel .slick-next {
+body main .examplesContainer .carouselContainer .carousel .slick-prev, body main .examplesContainer .carouselContainer .carousel .slick-next {
   padding-top: 1px;
 }
-main .examplesContainer .carouselContainer .carousel .slick-prev:before, main .examplesContainer .carouselContainer .carousel .slick-next:before {
+body main .examplesContainer .carouselContainer .carousel .slick-prev:before, body main .examplesContainer .carouselContainer .carousel .slick-next:before {
   color: blue;
 }
-main .examplesContainer .carouselContainer .carousel .slick-prev:hover, main .examplesContainer .carouselContainer .carousel .slick-prev:focus, main .examplesContainer .carouselContainer .carousel .slick-next:hover, main .examplesContainer .carouselContainer .carousel .slick-next:focus {
+body main .examplesContainer .carouselContainer .carousel .slick-prev:hover, body main .examplesContainer .carouselContainer .carousel .slick-prev:focus, body main .examplesContainer .carouselContainer .carousel .slick-next:hover, body main .examplesContainer .carouselContainer .carousel .slick-next:focus {
   outline: 1px dashed blue;
   outline-offset: 2px;
   border-radius: 10px;
 }
-main .examplesContainer .carouselContainer .carousel .slick-slide img {
+body main .examplesContainer .carouselContainer .carousel .slick-slide img {
   max-width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
-main .examplesContainer .carouselContainer .carousel .slick-slide {
+body main .examplesContainer .carouselContainer .carousel .slick-slide {
   width: 200px;
 }
-main .examplesContainer pre {
+body main .examplesContainer pre {
   margin: 0;
   display: flex;
   justify-content: center;
   font-size: 0.9em;
 }
 @media (min-width: 768px) {
-  main .examplesContainer pre {
+  body main .examplesContainer pre {
     font-size: 1.2em;
   }
 }
-main .examplesContainer pre code {
+body main .examplesContainer pre code {
   font-size: 9px;
   overflow: auto;
   text-align: left;
 }
 @media (min-width: 650px) {
-  main .examplesContainer pre code {
+  body main .examplesContainer pre code {
     font-size: 11px;
     overflow: visible;
   }
 }
 @media (min-width: 768px) {
-  main .examplesContainer pre code {
+  body main .examplesContainer pre code {
     font-size: 16px;
   }
 }
-main .examplesContainer pre code b {
+body main .examplesContainer pre code b {
   color: green;
   font-weight: 700;
   line-height: 1.3em;
   text-align: left;
 }
-main .examplesContainer pre code b.purple {
+body main .examplesContainer pre code b.purple {
   color: purple;
 }
-main .examplesContainer pre code b.orange {
+body main .examplesContainer pre code b.orange {
   color: orange;
 }
-main .examplesContainer pre code b.yellow {
+body main .examplesContainer pre code b.yellow {
   color: yellow;
   text-shadow: 1px 1px #000;
 }
-main .examplesContainer .appendArrowsMobileContainer {
+body main .examplesContainer .appendArrowsMobileContainer {
   border: 1px dotted red;
   margin: 0 auto;
   max-width: 80%;
@@ -131,29 +124,29 @@ main .examplesContainer .appendArrowsMobileContainer {
   padding: 10px 0 0 0;
 }
 @media (min-width: 768px) {
-  main .examplesContainer .appendArrowsMobileContainer .mobileVersion {
+  body main .examplesContainer .appendArrowsMobileContainer .mobileVersion {
     display: none;
   }
 }
 @media (min-width: 767px) {
-  main .examplesContainer .appendArrowsMobileContainer {
+  body main .examplesContainer .appendArrowsMobileContainer {
     background-color: #fff;
     display: none;
   }
 }
-main .examplesContainer .appendArrowsMobileContainer .appendArrowsMobile {
+body main .examplesContainer .appendArrowsMobileContainer .appendArrowsMobile {
   justify-content: center;
   position: relative;
   height: 40px;
   width: 0;
   margin: 0 auto;
 }
-main .examplesContainer .appendArrowsMobileContainer .appendArrowsMobile button {
+body main .examplesContainer .appendArrowsMobileContainer .appendArrowsMobile button {
   background-color: red;
   border-radius: 10px;
   padding-top: 1px;
 }
-main .examplesContainer .appendArrowsDesktopContainer {
+body main .examplesContainer .appendArrowsDesktopContainer {
   border: 1px dotted red;
   margin: 0 auto;
   max-width: 519px;
@@ -161,50 +154,50 @@ main .examplesContainer .appendArrowsDesktopContainer {
   padding: 10px 0 0 0;
 }
 @media (max-width: 767px) {
-  main .examplesContainer .appendArrowsDesktopContainer .desktopVersion {
+  body main .examplesContainer .appendArrowsDesktopContainer .desktopVersion {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  main .examplesContainer .appendArrowsDesktopContainer {
+  body main .examplesContainer .appendArrowsDesktopContainer {
     background-color: #fff;
     display: none;
   }
 }
-main .examplesContainer .appendArrowsDesktopContainer .appendArrowsDesktop {
+body main .examplesContainer .appendArrowsDesktopContainer .appendArrowsDesktop {
   justify-content: center;
   position: relative;
   height: 40px;
   width: 0;
   margin: 0 auto;
 }
-main .examplesContainer .appendArrowsDesktopContainer .appendArrowsDesktop button {
+body main .examplesContainer .appendArrowsDesktopContainer .appendArrowsDesktop button {
   background-color: red;
   border-radius: 10px;
   padding-top: 1px;
 }
-main .examplesContainer#c11 .appendDotsContainer {
+body main .examplesContainer#c11 .appendDotsContainer {
   display: flex;
   justify-content: center;
 }
-main .examplesContainer#c11 .appendDotsContainer .appendDots {
+body main .examplesContainer#c11 .appendDotsContainer .appendDots {
   background-color: green;
   height: 40px;
 }
-main .examplesContainer#c11 .appendDotsContainer .appendDots .slick-dots {
+body main .examplesContainer#c11 .appendDotsContainer .appendDots .slick-dots {
   background-color: #fff;
   position: static;
 }
-main .examplesContainer#c11 .carouselContainer {
+body main .examplesContainer#c11 .carouselContainer {
   flex-direction: row;
   justify-content: center;
 }
 @media (max-width: 991px) {
-  main .examplesContainer#c11 .carouselContainer {
+  body main .examplesContainer#c11 .carouselContainer {
     flex-direction: column;
   }
 }
-main .examplesContainer#c11 .carouselContainer .previous, main .examplesContainer#c11 .carouselContainer .next {
+body main .examplesContainer#c11 .carouselContainer .previous, body main .examplesContainer#c11 .carouselContainer .next {
   font-weight: bold;
   position: relative;
   font-size: 12px;
@@ -213,52 +206,52 @@ main .examplesContainer#c11 .carouselContainer .previous, main .examplesContaine
   width: 70px;
   min-height: 25px;
 }
-main .examplesContainer#c11 .carouselContainer .previous:before, main .examplesContainer#c11 .carouselContainer .previous:after, main .examplesContainer#c11 .carouselContainer .next:before, main .examplesContainer#c11 .carouselContainer .next:after {
+body main .examplesContainer#c11 .carouselContainer .previous:before, body main .examplesContainer#c11 .carouselContainer .previous:after, body main .examplesContainer#c11 .carouselContainer .next:before, body main .examplesContainer#c11 .carouselContainer .next:after {
   color: purple;
 }
-main .examplesContainer#c11 .carouselContainer .slick-dotted.slick-slider {
+body main .examplesContainer#c11 .carouselContainer .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
-main .examplesContainer#c11 .carouselContainer .arrow1:after {
+body main .examplesContainer#c11 .carouselContainer .arrow1:after {
   content: "(Text)";
   position: absolute;
   top: 3px;
 }
-main .examplesContainer#c11 .carouselContainer .previous.arrow1:after {
+body main .examplesContainer#c11 .carouselContainer .previous.arrow1:after {
   content: "(Text)";
   left: -52px;
 }
-main .examplesContainer#c11 .carouselContainer .next.arrow1:after {
+body main .examplesContainer#c11 .carouselContainer .next.arrow1:after {
   content: "(Text)";
   left: 84px;
 }
-main .examplesContainer#c11 .carouselContainer .arrow2:after {
+body main .examplesContainer#c11 .carouselContainer .arrow2:after {
   content: "(Text arrows)";
   position: absolute;
   top: 3px;
   white-space: nowrap;
 }
-main .examplesContainer#c11 .carouselContainer .previous.arrow2:after {
+body main .examplesContainer#c11 .carouselContainer .previous.arrow2:after {
   content: "(Text arrows)";
   left: -104px;
 }
-main .examplesContainer#c11 .carouselContainer .next.arrow2:after {
+body main .examplesContainer#c11 .carouselContainer .next.arrow2:after {
   content: "(Text arrows)";
   left: 84px;
 }
-main .examplesContainer#c11 .carouselContainer .buttonsContainer {
+body main .examplesContainer#c11 .carouselContainer .buttonsContainer {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container {
+body main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container {
   height: 62px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3 {
+body main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3 {
   border: solid #fff;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -267,27 +260,27 @@ main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Containe
   background-color: transparent;
   width: 22px;
 }
-main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3:before {
+body main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3:before {
   content: "(CSS)";
   position: absolute;
 }
-main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.previous {
+body main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.previous {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   left: 5px;
 }
-main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.previous:before {
+body main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.previous:before {
   transform: rotate(224deg);
   -webkit-transform: rotate(224deg);
   top: 52px;
   left: 46px;
 }
-main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.next {
+body main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.next {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   right: 5px;
 }
-main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.next:before {
+body main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Container .arrow3.next:before {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   top: 48px;
@@ -295,65 +288,78 @@ main .examplesContainer#c11 .carouselContainer .buttonsContainer .arrow3Containe
   bottom: 0;
   left: 55px;
 }
-main .examplesContainer#c11 .carouselContainer .arrow4 img {
+body main .examplesContainer#c11 .carouselContainer .arrow4 img {
   width: 50px;
 }
-main .examplesContainer#c11 .carouselContainer .arrow4.previous:after {
+body main .examplesContainer#c11 .carouselContainer .arrow4.previous:after {
   content: "(Image)";
   position: absolute;
   top: 20px;
   left: -68px;
 }
-main .examplesContainer#c11 .carouselContainer .arrow4.next:after {
+body main .examplesContainer#c11 .carouselContainer .arrow4.next:after {
   content: "(Image)";
   position: absolute;
   top: 20px;
   left: 84px;
 }
-main .examplesContainer#c12 .slick-list {
+body main .examplesContainer#c12 .slick-list {
   border-left: 3px solid orange;
   border-right: 3px solid orange;
 }
-main .examplesContainer#c12 .slick-list img {
+body main .examplesContainer#c12 .slick-list img {
   outline: 3px solid orange;
   outline-offset: -3px;
 }
-main .examplesContainer#c12 .slick-list img.slick-active {
+body main .examplesContainer#c12 .slick-list img.slick-active {
   outline: none;
 }
-main .examplesContainer#c15 .slick-dots .slick-active {
+body main .examplesContainer#c15 .slick-dots .slick-active {
   border: 3px dotted yellow;
 }
 @media (min-width: 768px) {
-  main .examplesContainer#c15 .break {
+  body main .examplesContainer#c15 .break {
     display: none;
   }
 }
-main .examplesContainer#c15 pre img {
+body main .examplesContainer#c15 pre img {
   top: 2px;
   position: relative;
 }
-main .examplesContainer#c19 pre code {
+body main .examplesContainer#c19 #demo {
+  border: 1px solid black;
+  max-width: 400px;
+  margin: auto;
+}
+body main .examplesContainer#c19 #demo .green {
+  color: green;
+  text-shadow: 1px 1px black;
+}
+body main .examplesContainer#c19 #demo .red {
+  color: red;
+  text-shadow: 1px 1px black;
+}
+body main .examplesContainer#c19 pre code {
   font-size: 9px;
   overflow: auto;
 }
 @media (min-width: 650px) {
-  main .examplesContainer#c19 pre code {
+  body main .examplesContainer#c19 pre code {
     font-size: 11px;
     overflow: visible;
   }
 }
 @media (min-width: 768px) {
-  main .examplesContainer#c19 pre code {
+  body main .examplesContainer#c19 pre code {
     font-size: 16px;
   }
 }
-main .examplesContainer#c21 .slick-track img:focus {
+body main .examplesContainer#c21 .slick-track img:focus {
   outline: 2px dotted red;
   outline-offset: -2px;
 }
 @media (min-width: 768px) {
-  main .examplesContainer#c21 .slick-track img:focus {
+  body main .examplesContainer#c21 .slick-track img:focus {
     outline: 4px dotted red;
   }
 }

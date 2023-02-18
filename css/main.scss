@@ -1,202 +1,214 @@
-body { text-align: center; font-family: Verdana; }
-header { margin: 40px 0;
-    h3 { 
-        a { color: #000; } 
+body { text-align: center; font-family: Verdana; 
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: orange;
+        padding: 5px;
+        font-size: 20px;
+        z-index: 2;
+    }
+    
+    header { margin: 40px 0;
+        h3 { 
+            a { color: #000; } 
+        }
+    }
+    
+    main {
+        .examplesContainer { padding: 25px 5px 45px 5px;
+                &:nth-child(odd) { background: rgba(151,180,211,1); }
+                &:nth-child(even) { background: #fff; }
+                @media (min-width: 768px) {
+                    h4,h5 {
+                        max-width: 700px;
+                        margin: 20px auto;
+                    }
+                }
+                .carouselContainer { display: flex; align-items: center; flex-direction: column;    
+                    .carousel { max-width: 519px; 
+                        @media (max-width: 767px) {
+                            max-width:80%;
+                        }    
+                        .slick-dots { 
+                            button {
+                                padding-top: 1px;
+                                &:focus { outline: 1px dashed blue; outline-offset: -3px; border-radius: 10px;}
+                            }
+                        }
+                        .slick-prev, .slick-next { padding-top: 1px; }
+                        .slick-prev:before, .slick-next:before { color: blue; }
+                        .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: 1px dashed blue; outline-offset: 2px; border-radius: 10px; }
+                        .slick-slide img{ max-width: 100%; height: auto; object-fit: contain;}
+                        .slick-slide { width: 200px; }
+                    }
+                }
+                pre { 
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    font-size: .9em;
+                    @media (min-width: 768px) { font-size: 1.2em; }
+                    code {   
+                        font-size: 9px; overflow: auto;
+                        @media (min-width: 650px) { font-size: 11px; overflow: visible; }
+                        @media (min-width: 768px) { font-size: 16px; }             
+                        text-align: left; 
+                        b { 
+                            color: green; font-weight: 700; line-height: 1.3em; text-align: left;
+                            &.purple { color: purple; }
+                            &.orange { color: orange; }
+                            &.yellow { color: yellow; text-shadow: 1px 1px #000; }
+                        }
+                    }
+                }            
+                .appendArrowsMobileContainer { border: 1px dotted red; margin: 0 auto; max-width: 80%; background-color: #ddd; padding: 10px 0 0 0;            
+                    @media (min-width: 768px) { .mobileVersion { display: none; } }
+                    @media (min-width: 767px) { background-color: #fff; display: none; }
+                    .appendArrowsMobile { justify-content: center;
+                        position: relative;
+                        height: 40px;
+                        width: 0;
+                        margin: 0 auto;
+                        button { background-color: red; border-radius: 10px; padding-top: 1px; }
+                    }   
+                }             
+                .appendArrowsDesktopContainer { border: 1px dotted red; margin: 0 auto; max-width: 519px; background-color: #ddd; padding: 10px 0 0 0;
+                    @media (max-width: 767px) { .desktopVersion { display: none; } } 
+                    @media (max-width: 767px) { background-color: #fff; display: none; }
+                    .appendArrowsDesktop { justify-content: center;
+                        position: relative;
+                        height: 40px;
+                        width: 0;
+                        margin: 0 auto;
+                        button { background-color: red; border-radius: 10px; padding-top: 1px; }
+                    }
+                }
+                &#c11 {                 
+                    .appendDotsContainer { display: flex; justify-content: center;
+                        .appendDots { background-color: green; height: 40px; 
+                            .slick-dots { background-color: #fff; position: static; }
+                        }
+                    }
+                    .carouselContainer { flex-direction: row; justify-content: center;
+                            @media (max-width: 991px) { flex-direction: column; } 
+                            .previous, .next { font-weight: bold; position: relative; font-size: 12px; color: #000; flex: 0 0 auto; width: 70px; min-height: 25px; 
+                                &:before, &:after {
+                                    color: purple;
+                                }}                     
+                            .slick-dotted.slick-slider { margin-bottom: 0; }    
+
+                            .arrow1:after { content: "(Text)"; position: absolute; top: 3px; };                
+                            .previous.arrow1:after { content: "(Text)"; left: -52px; };
+                            .next.arrow1:after { content: "(Text)"; left: 84px; };
+
+                            .arrow2:after { content: "(Text arrows)"; position: absolute; top: 3px; white-space: nowrap; };
+                            .previous.arrow2:after { content: "(Text arrows)"; left: -104px; };
+                            .next.arrow2:after { content: "(Text arrows)"; left: 84px; };
+
+                            .buttonsContainer { display: flex; flex-direction: column; margin: 10px;                  
+                                .arrow3Container {   
+                                    
+                                    height: 62px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .arrow3 {
+                                        border: solid #fff;
+                                        border-width: 0 3px 3px 0;
+                                        display: inline-block;
+                                        padding: 11px;
+                                        position: relative;
+                                        background-color: transparent;
+                                        width: 22px;
+                                        &:before {
+                                            content: "(CSS)";
+                                            position: absolute;
+                                        }
+                                        &.previous { // Left arrow rotation
+                                            transform: rotate(135deg);
+                                            -webkit-transform: rotate(135deg);
+                                            left: 5px;
+                                            &:before { // Text description placement and rotation
+                                                transform: rotate(224deg);
+                                                -webkit-transform: rotate(224deg);                                    
+                                                top: 52px;
+                                                left: 46px;
+                                            }    
+                                        }
+                                        &.next { // Right arrow rotation
+                                            transform: rotate(-45deg);
+                                            -webkit-transform: rotate(-45deg);
+                                            right: 5px;
+                                            &:before { // Text description placement and rotation
+                                                transform: rotate(45deg);
+                                                -webkit-transform: rotate(45deg); 
+                                                top: 48px;
+                                                right: 0;
+                                                bottom: 0;
+                                                left: 55px;
+                                            }    
+                                    }
+                                }
+                            }
+                            }
+                            .arrow4 {
+                                img { width: 50px; }
+                                &.previous:after { content: "(Image)"; position: absolute; top: 20px; left: -68px; };  
+                                &.next:after { content: "(Image)"; position: absolute; top: 20px; left: 84px; };  
+                            }
+                    }
+                }
+                &#c12 {
+                    .slick-list {
+                        border-left: 3px solid orange;
+                        border-right: 3px solid orange;
+                        img {
+                            outline: 3px solid orange;
+                            outline-offset: -3px;
+                            &.slick-active {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+                &#c15 {
+                    .slick-dots {
+                        .slick-active { border: 3px dotted yellow; }
+                    }
+                    @media(min-width: 768px) {.break { display: none; } }
+                    pre { 
+                        img { 
+                            top: 2px;
+                            position: relative;
+                        }
+                    }
+                }
+                &#c19 {
+                    #demo { border: 1px solid black; max-width: 400px; margin: auto;
+                        .green { color: green; text-shadow: 1px 1px black; } 
+                        .red { color: red; text-shadow: 1px 1px black; } 
+                    }
+                    pre {
+                        code {
+                            font-size: 9px; overflow: auto;
+                            @media (min-width: 650px) { font-size: 11px; overflow: visible; }
+                            @media (min-width: 768px) { font-size: 16px; }
+                            }
+                    }
+                }
+                &#c21 {
+                    .slick-track img:focus {
+                        outline: 2px dotted red;
+                        outline-offset: -2px;
+                        @media (min-width: 768px) { outline: 4px dotted red;  }
+                    }
+                }
+            }
     }
 }
 
-#demo { border: 1px solid black; max-width: 400px; margin: auto;
-    .green { color: green; text-shadow: 1px 1px black; } 
-    .red { color: red; text-shadow: 1px 1px black; } 
-}
-main {
-    .examplesContainer { padding: 25px 5px 45px 5px;
-            &:nth-child(odd) { background: rgba(151,180,211,1); }
-            &:nth-child(even) { background: #fff; }
-            @media (min-width: 768px) {
-                h4,h5 {
-                    max-width: 700px;
-                    margin: 20px auto;
-                }
-            }
-            .carouselContainer { display: flex; align-items: center; flex-direction: column;    
-                .carousel { max-width: 519px; 
-                    @media (max-width: 767px) {
-                        max-width:80%;
-                    }    
-                    .slick-dots { 
-                        button {
-                            padding-top: 1px;
-                            &:focus { outline: 1px dashed blue; outline-offset: -3px; border-radius: 10px;}
-                        }
-                    }
-                    .slick-prev, .slick-next { padding-top: 1px; }
-                    .slick-prev:before, .slick-next:before { color: blue; }
-                    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: 1px dashed blue; outline-offset: 2px; border-radius: 10px; }
-                    .slick-slide img{ max-width: 100%; height: auto; object-fit: contain;}
-                    .slick-slide { width: 200px; }
-                }
-            }
-            pre { 
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                font-size: .9em;
-                @media (min-width: 768px) { font-size: 1.2em; }
-                code {   
-                    font-size: 9px; overflow: auto;
-                    @media (min-width: 650px) { font-size: 11px; overflow: visible; }
-                    @media (min-width: 768px) { font-size: 16px; }             
-                    text-align: left; 
-                    b { 
-                        color: green; font-weight: 700; line-height: 1.3em; text-align: left;
-                        &.purple { color: purple; }
-                        &.orange { color: orange; }
-                        &.yellow { color: yellow; text-shadow: 1px 1px #000; }
-                    }
-                }
-            }            
-            .appendArrowsMobileContainer { border: 1px dotted red; margin: 0 auto; max-width: 80%; background-color: #ddd; padding: 10px 0 0 0;            
-                @media (min-width: 768px) { .mobileVersion { display: none; } }
-                @media (min-width: 767px) { background-color: #fff; display: none; }
-                .appendArrowsMobile { justify-content: center;
-                    position: relative;
-                    height: 40px;
-                    width: 0;
-                    margin: 0 auto;
-                    button { background-color: red; border-radius: 10px; padding-top: 1px; }
-                }   
-            }             
-            .appendArrowsDesktopContainer { border: 1px dotted red; margin: 0 auto; max-width: 519px; background-color: #ddd; padding: 10px 0 0 0;
-                @media (max-width: 767px) { .desktopVersion { display: none; } } 
-                @media (max-width: 767px) { background-color: #fff; display: none; }
-                .appendArrowsDesktop { justify-content: center;
-                    position: relative;
-                    height: 40px;
-                    width: 0;
-                    margin: 0 auto;
-                    button { background-color: red; border-radius: 10px; padding-top: 1px; }
-                }
-            }
-            &#c11 {                 
-                .appendDotsContainer { display: flex; justify-content: center;
-                    .appendDots { background-color: green; height: 40px; 
-                        .slick-dots { background-color: #fff; position: static; }
-                    }
-                }
-                .carouselContainer { flex-direction: row; justify-content: center;
-                        @media (max-width: 991px) { flex-direction: column; } 
-                        .previous, .next { font-weight: bold; position: relative; font-size: 12px; color: #000; flex: 0 0 auto; width: 70px; min-height: 25px; 
-                            &:before, &:after {
-                                color: purple;
-                            }}                     
-                        .slick-dotted.slick-slider { margin-bottom: 0; }    
-
-                        .arrow1:after { content: "(Text)"; position: absolute; top: 3px; };                
-                        .previous.arrow1:after { content: "(Text)"; left: -52px; };
-                        .next.arrow1:after { content: "(Text)"; left: 84px; };
-
-                        .arrow2:after { content: "(Text arrows)"; position: absolute; top: 3px; white-space: nowrap; };
-                        .previous.arrow2:after { content: "(Text arrows)"; left: -104px; };
-                        .next.arrow2:after { content: "(Text arrows)"; left: 84px; };
-
-                        .buttonsContainer { display: flex; flex-direction: column; margin: 10px;                  
-                            .arrow3Container {   
-                                
-                                height: 62px;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                .arrow3 {
-                                    border: solid #fff;
-                                    border-width: 0 3px 3px 0;
-                                    display: inline-block;
-                                    padding: 11px;
-                                    position: relative;
-                                    background-color: transparent;
-                                    width: 22px;
-                                    &:before {
-                                        content: "(CSS)";
-                                        position: absolute;
-                                    }
-                                    &.previous { // Left arrow rotation
-                                        transform: rotate(135deg);
-                                        -webkit-transform: rotate(135deg);
-                                        left: 5px;
-                                        &:before { // Text description placement and rotation
-                                            transform: rotate(224deg);
-                                            -webkit-transform: rotate(224deg);                                    
-                                            top: 52px;
-                                            left: 46px;
-                                        }    
-                                    }
-                                    &.next { // Right arrow rotation
-                                        transform: rotate(-45deg);
-                                        -webkit-transform: rotate(-45deg);
-                                        right: 5px;
-                                        &:before { // Text description placement and rotation
-                                            transform: rotate(45deg);
-                                            -webkit-transform: rotate(45deg); 
-                                            top: 48px;
-                                            right: 0;
-                                            bottom: 0;
-                                            left: 55px;
-                                        }    
-                                }
-                            }
-                        }
-                        }
-                        .arrow4 {
-                            img { width: 50px; }
-                            &.previous:after { content: "(Image)"; position: absolute; top: 20px; left: -68px; };  
-                            &.next:after { content: "(Image)"; position: absolute; top: 20px; left: 84px; };  
-                        }
-                }
-            }
-            &#c12 {
-                .slick-list {
-                    border-left: 3px solid orange;
-                    border-right: 3px solid orange;
-                    img {
-                        outline: 3px solid orange;
-                        outline-offset: -3px;
-                        &.slick-active {
-                            outline: none;
-                        }
-                    }
-                }
-            }
-            &#c15 {
-                .slick-dots {
-                    .slick-active { border: 3px dotted yellow; }
-                }
-                @media(min-width: 768px) {.break { display: none; } }
-                pre { 
-                    img { 
-                        top: 2px;
-                        position: relative;
-                     }
-                }
-            }
-            &#c19 {
-                pre {
-                    code {
-                        font-size: 9px; overflow: auto;
-                        @media (min-width: 650px) { font-size: 11px; overflow: visible; }
-                        @media (min-width: 768px) { font-size: 16px; }
-                        }
-                }
-            }
-            &#c21 {
-                .slick-track img:focus {
-                    outline: 2px dotted red;
-                    outline-offset: -2px;
-                    @media (min-width: 768px) { outline: 4px dotted red;  }
-                }
-            }
-        }
-}
 footer {
     h2 {
         a { color: #000; text-decoration: none; }
