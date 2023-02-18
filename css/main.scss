@@ -1,4 +1,4 @@
-body { text-align: center; }
+body { text-align: center; font-family: Verdana; }
 header { margin: 40px 0;
     h3 { 
         a { color: #000; } 
@@ -13,6 +13,12 @@ main {
     .examplesContainer { padding: 25px 5px 45px 5px;
             &:nth-child(odd) { background: rgba(151,180,211,1); }
             &:nth-child(even) { background: #fff; }
+            @media (min-width: 768px) {
+                h4,h5 {
+                    max-width: 700px;
+                    margin: 20px auto;
+                }
+            }
             .carouselContainer { display: flex; align-items: center; flex-direction: column;    
                 .carousel { max-width: 519px; 
                     @media (max-width: 767px) {
@@ -87,11 +93,11 @@ main {
                         .slick-dotted.slick-slider { margin-bottom: 0; }    
 
                         .arrow1:after { content: "(Text)"; position: absolute; top: 3px; };                
-                        .previous.arrow1:after { content: "(Text)"; left: -45px; };
+                        .previous.arrow1:after { content: "(Text)"; left: -52px; };
                         .next.arrow1:after { content: "(Text)"; left: 84px; };
 
                         .arrow2:after { content: "(Text arrows)"; position: absolute; top: 3px; white-space: nowrap; };
-                        .previous.arrow2:after { content: "(Text arrows)"; left: -82px; };
+                        .previous.arrow2:after { content: "(Text arrows)"; left: -104px; };
                         .next.arrow2:after { content: "(Text arrows)"; left: 84px; };
 
                         .buttonsContainer { display: flex; flex-direction: column; margin: 10px;                  
@@ -143,7 +149,7 @@ main {
                         }
                         .arrow4 {
                             img { width: 50px; }
-                            &.previous:after { content: "(Image)"; position: absolute; top: 20px; left: -56px; };  
+                            &.previous:after { content: "(Image)"; position: absolute; top: 20px; left: -68px; };  
                             &.next:after { content: "(Image)"; position: absolute; top: 20px; left: 84px; };  
                         }
                 }

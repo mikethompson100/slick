@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  font-family: Verdana;
 }
 
 header {
@@ -31,6 +32,12 @@ main .examplesContainer:nth-child(odd) {
 }
 main .examplesContainer:nth-child(even) {
   background: #fff;
+}
+@media (min-width: 768px) {
+  main .examplesContainer h4, main .examplesContainer h5 {
+    max-width: 700px;
+    margin: 20px auto;
+  }
 }
 main .examplesContainer .carouselContainer {
   display: flex;
@@ -219,7 +226,7 @@ main .examplesContainer#c11 .carouselContainer .arrow1:after {
 }
 main .examplesContainer#c11 .carouselContainer .previous.arrow1:after {
   content: "(Text)";
-  left: -45px;
+  left: -52px;
 }
 main .examplesContainer#c11 .carouselContainer .next.arrow1:after {
   content: "(Text)";
@@ -233,7 +240,7 @@ main .examplesContainer#c11 .carouselContainer .arrow2:after {
 }
 main .examplesContainer#c11 .carouselContainer .previous.arrow2:after {
   content: "(Text arrows)";
-  left: -82px;
+  left: -104px;
 }
 main .examplesContainer#c11 .carouselContainer .next.arrow2:after {
   content: "(Text arrows)";
@@ -295,7 +302,7 @@ main .examplesContainer#c11 .carouselContainer .arrow4.previous:after {
   content: "(Image)";
   position: absolute;
   top: 20px;
-  left: -56px;
+  left: -68px;
 }
 main .examplesContainer#c11 .carouselContainer .arrow4.next:after {
   content: "(Image)";
