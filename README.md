@@ -36,6 +36,6 @@ Notes: 2/4/23: Built Carousel 19 showcasing the lazyloaded and lazyLoadError eve
 
 Notes: 2/12/23: Built Carousel 20 showcasing mobileFirst and initialSlide.
 
-
+Notes: 2/18/23: Built Carousel 21 showcasing pauseOnFocus, pauseOnHover & pauseOnDotsHover.
 
 
