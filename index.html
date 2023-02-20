@@ -404,6 +404,29 @@
 
   </code></pre>
       </div>
+
+      <div id="c22" class="examplesContainer">
+        <h4>Example 22 - respondTo</h4>   
+        <h5>respondTo</h5> 
+        <div class="carouselContainer">   
+          <div id="carousel22" class="carousel"></div>
+        </div>       
+  <pre><code>
+
+    $("#carousel22").slick({
+      respondTo: 'window' ,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {        
+            respondTo: 'slider'
+          }
+        }
+       ] 
+    });
+    
+  </code></pre>
+      </div>
     </main>
     <footer id="defaults">
       <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>

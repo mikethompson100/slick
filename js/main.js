@@ -1,4 +1,4 @@
-const carouselTotal = 21;
+const carouselTotal = 22;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -209,6 +209,18 @@ $('#carousel21').slick({
   pauseOnHover: true,
   dots: true,
   pauseOnDotsHover: true
+});
+
+$('#carousel22').slick({
+  respondTo: 'window' ,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {        
+        respondTo: 'slider'
+      }
+    }
+   ] 
 });
 
 

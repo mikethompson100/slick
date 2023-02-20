@@ -215,6 +215,9 @@ body { text-align: center; font-family: Verdana;
                         @media (min-width: 768px) { outline: 4px dotted red;  }
                     }
                 }
+                &#c22 { 
+                    .carousel { max-width: 90%; }
+                }
             }
     }
 }
