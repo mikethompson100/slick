@@ -11,14 +11,23 @@ body .sticky {
   font-size: 20px;
   z-index: 2;
 }
-body header {
-  margin: 40px 0;
+body .sticky a {
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  color: blue;
 }
 body header h3 a {
   color: #000;
 }
 body main .examplesContainer {
   padding: 25px 5px 45px 5px;
+}
+@media (min-height: 80px) {
+  body main .examplesContainer {
+    scroll-margin-top: 65px;
+  }
 }
 body main .examplesContainer:nth-child(odd) {
   background: rgb(151, 180, 211);
@@ -364,6 +373,11 @@ body main .examplesContainer#c21 .slick-track img:focus {
   }
 }
 
+@media (min-height: 80px) {
+  footer {
+    scroll-margin-top: 65px;
+  }
+}
 footer h2 a {
   color: #000;
   text-decoration: none;

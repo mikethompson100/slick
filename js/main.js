@@ -220,4 +220,3 @@ async function galleryInit() { return setupImages(carouselTotal) }
 
 // The galleryInit call waits for the image nodes to be created before running slick.
 galleryInit().then(initCarousels()); 
-
