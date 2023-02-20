@@ -38,4 +38,4 @@ Notes: 2/12/23: Built Carousel 20 showcasing mobileFirst and initialSlide.
 
 Notes: 2/18/23: Built Carousel 21 showcasing pauseOnFocus, pauseOnHover & pauseOnDotsHover.
 
-
+Notes: 2/19/23: Continuing work on the navigation area.
