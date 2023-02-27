@@ -212,7 +212,7 @@ $('#carousel21').slick({
 });
 
 $('#carousel22').slick({
-  respondTo: 'window' ,
+  respondTo: 'window',
   responsive: [
     {
       breakpoint: 768,

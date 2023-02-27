@@ -372,10 +372,6 @@ body main .examplesContainer#c21 .slick-track img:focus {
     outline: 4px dotted red;
   }
 }
-body main .examplesContainer#c22 .carousel {
-  max-width: 90%;
-}
-
 @media (min-height: 80px) {
   footer {
     scroll-margin-top: 65px;
