@@ -41,3 +41,7 @@ Notes: 2/18/23: Built Carousel 21 showcasing pauseOnFocus, pauseOnHover & pauseO
 Notes: 2/19/23: Continuing work on the navigation area.
 
 Notes: 2/20/23: Started Carousel 22 and respondTo.
+
+Notes: 2/26/23: Reworking Carousel 22/respondTo code. 
+
+ 
