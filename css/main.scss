@@ -224,6 +224,17 @@ body { text-align: center; font-family: Verdana;
                         }
                     }
                 }
+                &#c23 { 
+                    .carousel {
+                        width: 100% !important; 
+                        @media (min-width: 500px) {
+                             width: 250px !important; 
+                        }
+                        @media (min-width: 1400px) {
+                            width: 100% !important;
+                        }
+                    }
+                }
             }
     }
 }

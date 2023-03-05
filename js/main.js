@@ -238,6 +238,20 @@ $('#carousel22').slick({
    ]
 });
 
+$('#carousel23').slick({
+     mobileFirst: true,
+     rows: 2,
+     slidesPerRow: 1,
+     responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          rows: 2,
+          slidesPerRow: 2
+        }
+      }
+     ]
+});
 
 }; 
 

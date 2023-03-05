@@ -442,6 +442,33 @@
     
   </code></pre>
       </div>
+
+      <div id="c23" class="examplesContainer">
+        <h4>Example 23 - rows/slidesPerRow (use together)</h4>
+        <h4>Allows for multiple rows on slideshow</h4>
+        <h5>'row' = integer. When set to greater than 1 it initializes grid mode then slidesPerRow sets the number of slides to show in each row.</h5>
+        <div class="carouselContainer">
+          <div id="carousel23" class="carousel"></div>
+        </div>
+  <pre><code>
+      $('.carousel23').slick({        
+        mobileFirst: true,
+        <b>rows: 2,
+        slidesPerRow: 1,</b>
+        responsive: [
+         {
+           breakpoint: 1200,
+           settings: {
+            <b>rows: 2,
+             slidesPerRow: 2</b>
+           }
+         }
+        ]
+      });
+
+  </code></pre>
+      </div>
+
     </main>
     <footer id="defaults">
       <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>

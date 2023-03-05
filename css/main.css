@@ -381,6 +381,19 @@ body main .examplesContainer#c22 .carousel {
     max-width: none;
   }
 }
+body main .examplesContainer#c23 .carousel {
+  width: 100% !important;
+}
+@media (min-width: 500px) {
+  body main .examplesContainer#c23 .carousel {
+    width: 250px !important;
+  }
+}
+@media (min-width: 1400px) {
+  body main .examplesContainer#c23 .carousel {
+    width: 100% !important;
+  }
+}
 
 @media (min-height: 80px) {
   footer {
