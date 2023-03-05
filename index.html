@@ -414,15 +414,30 @@
   <pre><code>
 
     $("#carousel22").slick({
-      respondTo: 'window',
+      <b>respondTo: 'slider',</b>
+      dots: false,
+      slidesToShow: 2, 
+      slidesToScroll: 2, 
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 767, // mobile 400-767
           settings: {        
-            respondTo: 'slider'  (mobile view)
+            <b>respondTo: 'window',</b>
+            slidesToShow: 1, 
+            slidesToScroll: 1,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 400, // mobile 400
+          settings: {        
+            <b>respondTo: 'min',</b>
+            slidesToShow: 1, 
+            slidesToScroll: 1,
+            dots: true
           }
         }
-       ] 
+       ]
     });
     
   </code></pre>

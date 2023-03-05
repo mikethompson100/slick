@@ -216,7 +216,13 @@ body { text-align: center; font-family: Verdana;
                     }
                 }
                 &#c22 { 
-                    .carousel {  }
+                    .carousel {
+                        width: 519px;
+                        @media (max-width: 767px) {
+                            width: 100%;
+                            max-width: none;
+                        }
+                    }
                 }
             }
     }

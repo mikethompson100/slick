@@ -1,4 +1,4 @@
-const carouselTotal = 22;
+const carouselTotal = 23;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -212,15 +212,30 @@ $('#carousel21').slick({
 });
 
 $('#carousel22').slick({
-  respondTo: 'window',
+  respondTo: 'slider',
+  dots: false,
+  slidesToShow: 2, 
+  slidesToScroll: 2, 
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767, // mobile 400-767
       settings: {        
-        respondTo: 'slider'
+        respondTo: 'window',        
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 400, // mobile 400
+      settings: {        
+        respondTo: 'min',        
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        dots: true
       }
     }
-   ] 
+   ]
 });
 
 
