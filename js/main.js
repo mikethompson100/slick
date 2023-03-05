@@ -253,6 +253,11 @@ $('#carousel23').slick({
      ]
 });
 
+
+$('#carousel24').slick({
+  slide: ''
+});
+
 }; 
 
 
