@@ -49,3 +49,6 @@ Notes: 3/5/23: Finished Carousel 22 but need to revisit it because I'm not fully
 Notes: 3/5/23: Finished Carousel 23 demonstrating rows and slidesPerRow.
 
 Notes: 3/5/23: Starting Carousel 24, 'slide'.
+
+Notes: 3/7/23: Changed Carousel 24 to use slidesToShow/slidesToScroll instead. 
+
