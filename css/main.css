@@ -394,6 +394,16 @@ body main .examplesContainer#c23 .carousel {
     width: 100% !important;
   }
 }
+body main .examplesContainer#c26 #carousel26 {
+  height: 100px;
+  border: 1px solid green;
+}
+body main .examplesContainer#c26 #carousel26 .slick-slide {
+  line-height: 92px;
+}
+body main .examplesContainer#c26 .purple {
+  background-color: #ddd;
+}
 
 @media (min-height: 80px) {
   footer {

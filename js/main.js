@@ -1,4 +1,4 @@
-const carouselTotal = 25;
+const carouselTotal = 26;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -19,7 +19,10 @@ function setupImages(carouselTotal) { // add same group of image nodes to each c
     var container = document.getElementById(string);
      for (var j = 1; j <= imagesTotal; j++) {
         var node = new Image();
-        if (i === 18 || i === 19) {  // lazyLoad special carousel/images
+        if (i === 26) { 
+            //skip this carousel for slide: 'div' example 
+           }
+        else if (i === 18 || i === 19) {  // lazyLoad special carousel/images
               switch (j) {
                 case 1: node.alt = "White, red and yellow sports cars at a car show."; break;
                 case 2: node.alt = "Red sports car at a car show."; break;
@@ -266,6 +269,10 @@ $('#carousel25').slick({
   slidesToShow: 2
 });
 
+$('#carousel26').slick({
+  slide: 'div',
+  rows: 0
+});
 }; 
 
 

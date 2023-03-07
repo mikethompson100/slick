@@ -41,6 +41,7 @@
       <a href="#c23" title="rows/slidesPerRow">23</a>
       <a href="#c24" title="slidesToShow/slidestoScroll">24</a>
       <a href="#c25" title="swipe/swipeToSlide">25</a>
+      <a href="#c26" title="slide with rows: 0">25</a>
     </div>
 
     <header id="top">
@@ -409,7 +410,6 @@
 
   </code></pre>
       </div>
-
       <div id="c22" class="examplesContainer">
         <h4>Example 22 - respondTo</h4>   
         <h5>respondTo</h5> 
@@ -447,7 +447,6 @@
     
   </code></pre>
       </div>
-
       <div id="c23" class="examplesContainer">
         <h4>Example 23 - rows/slidesPerRow (use together)</h4>
         <h4>Allows for multiple rows on slideshow</h4>
@@ -473,7 +472,6 @@
 
   </code></pre>
       </div>
-
       <div id="c24" class="examplesContainer">
         <h4>Example 24 - slidesToShow/slidesToScroll</h4>
         <div class="carouselContainer">
@@ -500,6 +498,29 @@
     slidesToScroll: 2,
     slidesToShow: 2
   });
+  </code></pre>
+      </div>
+      <div id="c26" class="examplesContainer">
+        <h4>Example 26 - slide with 'rows: 0'</h4>
+        <div class="carouselContainer">
+          <div id="carousel26" class="carousel">
+            <div>SLIDE 1 WITHIN A DIV</div>
+            <div>SLIDE 2 WITHIN A DIV</div>
+            <div>SLIDE 3 WITHIN A DIV</div>
+          </div>
+        </div>
+  <pre><code>
+    &lt;div id="carousel26" class="carousel"&gt;
+          <b class="purple">&lt;div&gt;</b>SLIDE 1 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
+          <b class="purple">&lt;div&gt;</b>SLIDE 2 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
+          <b class="purple">&lt;div&gt;</b>SLIDE 3 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
+      &lt;/div&gt;
+
+      $('.carousel26').slick({
+        <b class="purple">slide: 'div',</b>
+        rows: 0
+      });
+
   </code></pre>
       </div>
     </main>

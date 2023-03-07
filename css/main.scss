@@ -235,6 +235,16 @@ body { text-align: center; font-family: Verdana;
                         }
                     }
                 }
+                &#c26 { 
+                    #carousel26 {
+                        height: 100px;
+                        border: 1px solid green;
+                        .slick-slide {                           
+                            line-height: 92px;
+                        }                        
+                    }
+                    .purple { background-color: #ddd; }
+                }
             }
     }
 }
