@@ -54,5 +54,6 @@ Notes: 3/7/23: Changed Carousel 24 to use slidesToShow/slidesToScroll instead.
 
 Notes: 3/7/23: Created Carousel 25 demonstrating swipe/swipeToSlide.
 
+Notes: 3/7/23: Created Carousel 26 showing 'slide'.
 
 
