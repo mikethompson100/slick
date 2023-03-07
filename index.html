@@ -40,6 +40,7 @@
       <a href="#c22" title="respondTo">22</a>
       <a href="#c23" title="rows/slidesPerRow">23</a>
       <a href="#c24" title="slidesToShow/slidestoScroll">24</a>
+      <a href="#c25" title="swipe/swipeToSlide">25</a>
     </div>
 
     <header id="top">
@@ -482,6 +483,22 @@
   $('#carousel24').slick({
     slidesToShow: 3, 
     slidesToScroll: 3
+  });
+  </code></pre>
+      </div>
+      <div id="c25" class="examplesContainer">
+        <h4>Example 25 - swipe/swipeToSlide</h4>
+        <h5>With swipe equal to true, swipeToSlide allows users to swipe/drag to a particular slide regardless of how slidesToScroll is set</h5>
+        <h5>In this example, swipeToSlide overides slidesToScroll</h5>
+        <div class="carouselContainer">
+          <div id="carousel25" class="carousel"></div>
+        </div>
+  <pre><code>
+  $('#carousel25').slick({
+    <b>swipe: true,
+    swipeToSlide: true,</b>
+    slidesToScroll: 2,
+    slidesToShow: 2
   });
   </code></pre>
       </div>

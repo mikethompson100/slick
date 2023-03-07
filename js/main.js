@@ -1,4 +1,4 @@
-const carouselTotal = 24;
+const carouselTotal = 25;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -257,6 +257,13 @@ $('#carousel23').slick({
 $('#carousel24').slick({
   slidesToShow: 3, 
   slidesToScroll: 3
+});
+
+$('#carousel25').slick({
+  swipe: true,
+  swipeToSlide: true,
+  slidesToScroll: 2,
+  slidesToShow: 2
 });
 
 }; 
