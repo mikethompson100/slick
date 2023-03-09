@@ -41,7 +41,7 @@
       <a href="#c23" title="rows/slidesPerRow">23</a>
       <a href="#c24" title="slidesToShow/slidestoScroll">24</a>
       <a href="#c25" title="swipe/swipeToSlide">25</a>
-      <a href="#c26" title="slide with rows: 0">25</a>
+      <a href="#c26" title="slide with rows: 0">26</a>
     </div>
 
     <header id="top">
@@ -502,23 +502,40 @@
       </div>
       <div id="c26" class="examplesContainer">
         <h4>Example 26 - slide with 'rows: 0'</h4>
+        <h5>Using element query for slides</h5>
         <div class="carouselContainer">
           <div id="carousel26" class="carousel">
-            <div>SLIDE 1 WITHIN A DIV</div>
-            <div>SLIDE 2 WITHIN A DIV</div>
-            <div>SLIDE 3 WITHIN A DIV</div>
+            <div class="test">SLIDE 1 WITHIN A DIV</div>
+            <div class="test">SLIDE 2 WITHIN A DIV</div>
+            <div class="test">SLIDE 3 WITHIN A DIV</div>
           </div>
         </div>
   <pre><code>
     &lt;div id="carousel26" class="carousel"&gt;
-          <b class="purple">&lt;div&gt;</b>SLIDE 1 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
-          <b class="purple">&lt;div&gt;</b>SLIDE 2 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
-          <b class="purple">&lt;div&gt;</b>SLIDE 3 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
+          <b class="purple">&lt;div class="test"&gt;</b>SLIDE 1 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
+          <b class="purple">&lt;div class="test"&gt;</b>SLIDE 2 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
+          <b class="purple">&lt;div class="test"&gt;</b>SLIDE 3 WITHIN A DIV<b class="purple">&lt;/div&gt;</b>
       &lt;/div&gt;
 
-      $('.carousel26').slick({
-        <b class="purple">slide: 'div',</b>
+      $('#carousel26').slick({
+        <b class="purple">slide: 'div.test',</b>
         rows: 0
+      });
+
+  </code></pre>
+      </div>
+      <div id="c27" class="examplesContainer">
+        <h4>Example 27 - touchMove/touchThreshold</h4>
+        <h5>touchMove allows for slide moving with touch.</h5>
+        <h5>The touchThreshold value calculates what percentage of the slide needs to be touched in order for it to trigger a slide change. In this case, 1/20th of the slide needs to be moved in order to trigger a slide change. The default is 5 (1/5th of the slide width).</h5>
+        <div class="carouselContainer">
+          <div id="carousel27" class="carousel"></div>
+        </div>
+  <pre><code>
+
+      $('#carousel27').slick({
+        touchMove: true,
+        touchThreshold: 20
       });
 
   </code></pre>

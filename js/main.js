@@ -1,4 +1,4 @@
-const carouselTotal = 26;
+const carouselTotal = 27;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -270,9 +270,17 @@ $('#carousel25').slick({
 });
 
 $('#carousel26').slick({
-  slide: 'div',
+  slide: 'div.test',
   rows: 0
 });
+
+$('#carousel27').slick({
+  touchMove: true,
+  touchThreshold: 20
+});
+
+
+
 }; 
 
 
