@@ -404,6 +404,9 @@ body main .examplesContainer#c26 #carousel26 .slick-slide {
 body main .examplesContainer#c26 .purple {
   background-color: #ddd;
 }
+body main .examplesContainer#c29 .slick-slide {
+  transform: rotateX(180deg);
+}
 
 @media (min-height: 80px) {
   footer {

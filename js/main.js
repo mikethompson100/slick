@@ -285,6 +285,7 @@ $('#carousel28').slick({
 });
 
 $('#carousel29').slick({ 
+  useCss: false,
   useTransform: false
 });
 

@@ -245,6 +245,11 @@ body { text-align: center; font-family: Verdana;
                     }
                     .purple { background-color: #ddd; }
                 }
+                &#c29 {
+                    .slick-slide  {
+                        transform:rotateX(180deg);
+                      }
+                }
             }
     }
 }
