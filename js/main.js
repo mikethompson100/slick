@@ -1,4 +1,4 @@
-const carouselTotal = 28;
+const carouselTotal = 29;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -282,6 +282,10 @@ $('#carousel28').slick({
   useCSS: false,
   easing: 'easeOutElastic',
   speed: 4000
+});
+
+$('#carousel29').slick({ 
+  useTransform: false
 });
 
 }; 
