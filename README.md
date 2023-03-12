@@ -58,4 +58,5 @@ Notes: 3/7/23: Created Carousel 26 showing 'slide'.
 
 Notes: 3/9/23: Created Carousel 27 showcasing 'touchMove' and 'touchThreshold'.
 
+Notes: 3/11/23: Created Carousel 28 showing useCss and easing. This one took a little while to understand. I had to add a reference to jquery-easing.
 
