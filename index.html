@@ -42,6 +42,8 @@
       <a href="#c24" title="slidesToShow/slidestoScroll">24</a>
       <a href="#c25" title="swipe/swipeToSlide">25</a>
       <a href="#c26" title="slide with rows: 0">26</a>
+      <a href="#c27" title="touchMove/touchThreshold">27</a>
+      <a href="#c28" title="useCSS">28</a>
     </div>
 
     <header id="top">
@@ -288,15 +290,14 @@
   </code></pre>
       </div>
       <div id="c16" class="examplesContainer">
-        <h4>Example 16 - draggable/easing</h4>
+        <h4>Example 16 - draggable</h4>
         <h5>draggable sets the ability to drag the slides with a mouse</h5>
         <div class="carouselContainer">
           <div id="carousel16" class="carousel"></div>
         </div>
   <pre><code>
       $('.carousel16').slick({
-        <b>draggable: false,
-        easing: 'step-start',</b>
+        <b>draggable: false,</b>
         speed: 3000
       });
 
@@ -540,6 +541,21 @@
 
   </code></pre>
       </div>
+      <div id="c28" class="examplesContainer">
+        <h4>Example 28 - useCSS (Disable CSS Transitions) / easing</h4> 
+        <h5>Disable CSS Transitions in order to use jquery-easing instead.</h5>
+        <h5><a href="https://cdnjs.com/libraries/jquery-easing" target="_blank">https://cdnjs.com/libraries/jquery-easing</a></h5>
+        <div class="carouselContainer">
+          <div id="carousel28" class="carousel"></div>
+        </div>
+        <pre><code>
+        $('#carousel28').slick({
+          <b class="purple">useCSS: false,
+          easing: 'easeOutElastic',</b>
+          speed: 4000
+        }); 
+        </code></pre>
+      </div>    
     </main>
     <footer id="defaults">
       <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>
@@ -792,6 +808,7 @@
     </footer>
 
   <script src="vendor/js/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="vendor/js/slick/slick.min.js"></script>
   <script src="vendor/js/lazyload.min.js"></script>
   <script src="js/main.js"></script>
