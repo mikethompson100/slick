@@ -285,7 +285,8 @@ $('#carousel28').slick({
 });
 
 $('#carousel29').slick({ 
-
+  vertical: true,
+  verticalSwiping: true
 });
 
 }; 
