@@ -404,6 +404,9 @@ body main .examplesContainer#c26 #carousel26 .slick-slide {
 body main .examplesContainer#c26 .purple {
   background-color: #ddd;
 }
+body main .examplesContainer#c30 .stylesAdded {
+  border: 5px solid red;
+}
 
 @media (min-height: 80px) {
   footer {

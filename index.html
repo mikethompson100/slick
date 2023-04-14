@@ -569,6 +569,24 @@
         }); 
         </code></pre>
       </div>    
+      
+      <div id="c30" class="examplesContainer">
+        <h4>Example 30 - Using </h4> 
+        <div class="carouselContainer">
+          <div id="carousel30" class="carousel"></div>
+        </div>
+        <pre><code>
+          $('#carousel30').slick({ 
+            speed: 1000
+          });
+          
+          $('#carousel30').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $(this).addClass("stylesAdded");
+          });
+
+          .stylesAdded { border: 5px solid red; }
+        </code></pre>
+      </div>    
     </main>
     <footer id="defaults">
       <h2>Table of Default values <a href="#top"><span style="float: right">&#11161;</span></a></h2>

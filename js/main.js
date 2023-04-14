@@ -1,4 +1,4 @@
-const carouselTotal = 29;
+const carouselTotal = 30;
 const imagesTotal = 6;
 
 function standardAltTags(j, node) {
@@ -288,6 +288,15 @@ $('#carousel29').slick({
   vertical: true,
   verticalSwiping: true
 });
+
+$('#carousel30').slick({ 
+  speed: 1000
+});
+
+$('#carousel30').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  $(this).addClass("stylesAdded");
+});
+
 
 }; 
 

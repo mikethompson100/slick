@@ -63,3 +63,5 @@ Notes: 3/11/23: Created Carousel 28 showing useCss and easing. This one took a l
 Notes: 3/30/23: Starting Carousel 29.
 
 Notes: 4/12/23: Finished Carousel 29 showing the use of vertical and verticalSwiping. 
+
+Notes: 4/14/23: Finished Carousel 30 with onChange. Will continue with events in the next round of updates.
